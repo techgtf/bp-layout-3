@@ -2,22 +2,37 @@
 <html lang="en">
 
 <head>
-    <title>layout-bp-2</title>
+    <title style="font-size: 58px;">New layout</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+
 </head>
 
 <body>
     <div class="overlay"></div>
     <!---------------- Menu Section Codes Start From Here --------------->
-    <header class="container-fluid headermain p-0">
+    <header class="headermain d-flex align-items-center justify-content-between">
+        <a href="#" class="logo"><img src="images/logos/project-logo.png" alt="logo"></a>
+        <div class="ceterdiv" style="display: flex; gap: 0 15px;">
+            <button class="bookSiteVisit custombtn"> 
+                <!-- <img src="images/icons/book.svg" alt="book a site visite">  -->
+                Book A Site Visite !</button>
+            <button class="Callus custombtn"> 
+                <!-- <img src="images/icons/call.svg" alt="call">  -->
+                91-999-999-9999</button>
+        </div>
+        <div class="menuIcon">
+            <img style="cursor: pointer; position: relative; z-index: 1;" src="images/icons/menuicon.svg" alt="">
+        </div>
+    </header>
+    <header class="" style="display: none;">
         <div class="wrapper d-flex align-items-center justify-content-between">
             <a href="#" class="logo"><img style="filter: invert(1);" src="images/logos/project-logo.png" alt="logo"></a>
             <ul class="d-flex Navbar">
@@ -37,7 +52,7 @@
     <!---------------- Slider Section Codes Start From Here --------------->
     <section class="container-fluid banner-section p-0">
         <div class="wrapper">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade sliderdiv" data-ride="carousel" data-interval="2500">
                 <ol class="carousel-indicators" style="display: none;">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -47,7 +62,7 @@
                         <img class="d-block w-100" src="images/slider-banner/banner.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images/slider-banner/banner2.jpg" alt="First slide">
+                        <img class="d-block w-100" src="images/slider-banner/banner1.jpg" alt="First slide">
                     </div>
                 </div>
                 <div class="bnner-flex-btn">
@@ -61,22 +76,44 @@
                     </a>
                 </div>
             </div>
-          </div>
-          <div class="banner-content d-flex justify-content-between">
-            <div class="left-contetnt">
-                <h1 class="project-address">Noida Sector 15</h1>
-                <div class="projectname">Demo Project</div>
-                <ul class="keyhighlits">
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                </ul>
+            <div class="bannermain-content">
+                <div class="contetnwrapper">
+                    <h1 class="project-address">Noida Sector 15</h1>
+                    <!-- <div class="projectname">Demo Project</div> -->
+                    <div class="projectname"><img class="projlogo" src="images/logos/project-logo.png" alt=""></div>
+                    <div class="startingprice" style="color: var(--gray);text-transform: uppercase;font-family: 'NovaSquare'">Price Starts</div>
+                    <div class="startingprice startingprice1" style="color: var(--color1);"> <b class="inrIcon" style="color: var(--black); animation: name duration timing-function delay iteration-count direction fill-mode;">₹</b> 5<b style="font-family:NovaSquare; color: var(--black);"> Cr* </b></div>
+
+                    <div class="keyhighlights d-flex">
+                        <div class="textdiv">
+                            <p class="heading" style="color: var(--color1);font-family: 'NovaSquare'">Size</p>
+                            <span class="span">30009 Sq.Ft* Onwards</span>
+                        </div>
+                        <div class="textdiv">
+                            <p class="heading" style="color: var(--color1);font-family: 'NovaSquare'">Configurations</p>
+                            <span class="span">4 & 5 BHK APARTMENTS</span>
+                        </div>
+                        <div class="textdiv">
+                            <p class="heading" style="color: var(--color1);font-family: 'NovaSquare'">Status</p>
+                            <span class="span">New Launch</span>
+                        </div>
+                        <div class="textdiv">
+                            <p class="heading" style="color: var(--color1);font-family: 'NovaSquare'">Rera No.</p>
+                            <span class="span">xxxx/xxxx/xxxxx/xxxx</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formdiv">
+                    <h2 class="form-heading">Send Us A Message !</h2>
+                    <div class="inputbox"><input type="text" placeholder="Name"></div>
+                    <div class="inputbox"><input type="text" placeholder="Phone"></div>
+                    <div class="inputbox"><input type="text" placeholder="Email"></div>
+                    <div class="inputbox"><input type="text" placeholder="Message"></div>
+                    <button class="custombtn submitbtn">Get A Quote </button>
+                </div>
             </div>
-            <div class="fomrdiv">
-                <div class="">Book A Site Visit !</div>
-            </div>
-          </div>
+        </div>
     </section>
     <!---------------- Slider Section Codes End From Here --------------->
 
@@ -108,7 +145,66 @@
     <!---------------- Gallery Section Codes End From Here --------------->
 
     <!---------------- Contact Section Codes Start From Here --------------->
-    <section class="container-fluid contact-container" id="contact-us"></section>
+    <section class="container-fluid contact-container contact-section" id="contact-us">
+        <div class="contact-wrapper">
+            <div class="row">
+                <div class="col-md-5 from-col">
+                    <h2 class="heading NovaSquareFont">Get In Touch</h2>
+                    <div class="inputbox">
+                        <span>Name <b style="color: rgb(138, 31, 31);">*</b> </span>
+                        <input type="text" id="" placeholder="Name">
+                    </div>
+                    <div class="inputbox">
+                        <span>Email <b style="color: rgb(138, 31, 31);">*</b> </span>
+                        <input type="email" id="" placeholder="Email">
+                    </div>
+                    <div class="inputbox">
+                        <span>Phone No. <b style="color: rgb(138, 31, 31);">*</b> </span>
+                        <input type="text" id="" placeholder="Phone No.">
+                    </div>
+                    <div class="inputbox">
+                        <span>Message<b style="color: rgb(138, 31, 31);">*</b> </span>
+                        <input type="text" id="" placeholder="Message">
+                    </div>
+                    <button class="custombtn rounded d-flex justify-content-end">Submit Now</button>
+                </div>
+                <div class="col-md-7 right-col">
+                    <div class="imgbox">
+                        <a href="images/map-sm.jpg" class="with-caption image-link" title="Map">
+                            <img src="images/map-sm.jpg" alt="">
+                        </a>                        
+                    </div>
+                    <div class="location-advantage d-flex">
+                        <div class="box">
+                            <span class="title">05 Min</span>
+                            <p>Columbia Asia Hospital</p>
+                        </div>
+                        <div class="box">
+                            <span class="title">05 Min</span>
+                            <p>Columbia Asia Hospital</p>
+                        </div>
+                        <div class="box">
+                            <span class="title">05 Min</span>
+                            <p>Columbia Asia Hospital</p>
+                        </div>
+                        <div class="box">
+                            <span class="title">05 Min</span>
+                            <p>Columbia Asia Hospital</p>
+                        </div>
+                        <div class="box mb-0">
+                            <span class="title">05 Min</span>
+                            <p>Columbia Asia Hospital</p>
+                        </div>
+                        <div class="box mb-0">
+                            <span class="title">05 Min</span>
+                            <p>Columbia Asia Hospital</p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!---------------- Contact Section Codes End From Here --------------->
 
     <!-- .sitefooter start -->
