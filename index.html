@@ -11,14 +11,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
+    <link rel="stylesheet" href="css/magnific-popup.css">    
 </head>
 
 <body>
     <div class="overlay"></div>
     <!---------------- Menu Section Codes Start From Here --------------->
-    <header class="headermain d-flex align-items-center justify-content-between">
+    <header class="headermain d-flex align-items-center justify-content-between">        
         <a href="#" class="logo"><img src="images/logos/project-logo.png" alt="logo"></a>
         <div class="ceterdiv" style="display: flex; gap: 0 15px;"><button class="bookSiteVisit btnanimation custombtn" data-target="#customModal" data-toggle="modal"> Book A Site Visite !</button>
             <a  href="tel:0123123123" class="Callus custombtn" style="color: var(--white);">91-999-999-9999 </a>
@@ -59,12 +58,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/slider-banner/banner.jpg" alt="First slide">
+                        <img class="d-block img-slider w-100" src="images/slider-banner/banner.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images/slider-banner/banner1.jpg" alt="First slide">
+                        <img class="d-block img-slider w-100" src="images/slider-banner/banner1.jpg" alt="First slide">
                     </div>
                 </div>
+                <!-- .bnner-flex-btn -->
                 <div class="bnner-flex-btn">
                     <a class="carousel-btn carousel-control-prev active" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -75,13 +75,26 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
+                <!-- end .bnner-flex-btn -->
             </div>
+
+            <!-- Start .content-over-banner -->
+            <div class="content-over-banner d-flex f-wrap">
+                <div class="textdiv">
+                    <p class="smallheading"style="color: var(--black);">Status</p>
+                    <span class="span"style="color: var(--black); font-family: 'NovaSquare';">New Launch</span>
+                </div>
+                <div class="textdiv">
+                    <p class="smallheading" style="color: var(--black);">Rera No.</p>
+                    <span class="span"style="color: var(--black);font-family: 'NovaSquare'; ">xxxx/xxxx/xxxxx/xxxx</span>
+                </div>
+            </div>
+            <!-- End .content-over-banner -->
+
             <div class="bannermain-content">
                 <div class="contetnwrapper">
                     <h1 class="project-address">Noida Sector 15</h1>
-                    <div class="projectname">Demo Properties </div>
-                    <!-- <div class="projectname"><img class="projlogo" src="images/logos/project-logo.png" alt=""></div> -->
-                    <!-- <div class="startingprice" style="color: var(--gray);text-transform: uppercase;font-family: 'NovaSquare'">Price Starts</div> -->
+                    <div class="projectname">Demo Properties </div>                    
                     <div class="startingprice" style="color: var(--black);"> <b class="inrIcon" style="color: var(--black);">₹</b>5<b style="font-family:NovaSquare; color: var(--color1);"> Cr* </b> <span class="onwards">Onwards</span> </div>
 
                     <div class="keyhighlights d-flex">
@@ -93,24 +106,16 @@
                             <p class="smallheading" style="color: var(--color1);">Configurations</p>
                             <span class="span" style="color: var(--black);font-family: 'NovaSquare'">4 & 5 BHK <br class="d-view"> APARTMENTS</span>
                         </div>
-                        <div class="textdiv">
-                            <p class="smallheading"style="color: var(--color1);">Status</p>
-                            <span class="span"style="color: var(--black);font-family: 'NovaSquare'">New Launch</span>
-                        </div>
-                        <div class="textdiv">
-                            <p class="smallheading" style="color: var(--color1);">Rera No.</p>
-                            <span class="span"style="color: var(--black);font-family: 'NovaSquare'">xxxx/xxxx/xxxxx/xxxx</span>
-                        </div>
                     </div>
                 </div>
 
                 <div class="formdiv">
                     <h2 class="form-heading">Send Us A Message !</h2>
-                    <div class="inputbox"><input type="text" placeholder="Name*"></div>
-                    <div class="inputbox"><input type="text" placeholder="Phone*"></div>
-                    <div class="inputbox"><input type="text" placeholder="Email*"></div>
-                    <div class="inputbox"><input type="text" placeholder="Message*"></div>
-                    <button class="custombtn submitbtn">Get A Quote </button>
+                    <div class="inputbox"><input type="text" placeholder="Name*" id="qSenderName"></div>
+                    <div class="inputbox"><input type="text" placeholder="Phone*" id="qSenderMobileNo"></div>
+                    <div class="inputbox"><input type="text" placeholder="Email*" id="qSenderEmailID"></div>
+                    <div class="inputbox"><input type="text" placeholder="Message*" id="qSenderMessage"></div>
+                    <button class="custombtn submitbtn" id="SubmitQuery">Get A Quote </button>
                 </div>
             </div>
         </div>
@@ -131,12 +136,7 @@
                     <img class="img-sm" src="images/overview/overview1.jpg" alt="img">
                 </div>
                 <div class="rightimg col-md-6">
-                    <img src="images/overview/overview.jpg" alt="">
-                    <!-- <div class="div-bottom">
-                        <div class="div-cir div1"></div>
-                        <div class="div-cir div2"></div>
-                        <div class="div-cir div3"></div>
-                    </div> -->
+                    <img class="overview-lg-img" src="images/overview/overview.jpg" alt="">                    
                     <div class="circle">
                         <div class="a"> </div>
                         <div class="b"> </div>
@@ -154,7 +154,7 @@
     <!---------------- Overview Section Codes End From Here --------------->
 
     <!---------------- Highlights Section Codes Start From Here --------------->
-    <section class="container-fluid highlights-contaier" id="highlights">        
+    <section class="container-fluid highlights-contaier" id="highlights">
         <div class="patterndiv"></div>
         <div class="wrapper">
             <div class="flexdiv d-flex f-wrap">
@@ -183,14 +183,112 @@
     <!---------------- Highlights Section Codes End From Here --------------->
 
     <!---------------- Price List Section Codes Start From Here --------------->
-    <section class="container-fluid pricelist-container" id="price-list">
-        
+    <section class="container-fluid pricelist-container" id="price-list" style="background: url(images/bg.jpg) no-repeat; background-size: cover; background-attachment: fixed;">
+        <div class="wrapper">
+            <div class="headingsection d-flex justify-content-center">
+                <h1 class="heading NovaSquareFont">Price List</h1>
+                <p class="desc" style="color: var(--color1);">Quality That Fits Your Budget</p>
+            </div>
+            <div class="flexdiv d-flex f-wrap justify-content-center">
+                <!-- cards -->
+                <div class="cards">
+                    <div class="cardinner">
+                        <img class="indicaterline" src="images/others/line.png" alt="">
+                        <div class="head NovaSquareFont"> 1 BHK</div>
+                        <div class="text d-flex align-items-center justify-content-center"> 
+                            <span class="text-sm">Price : </span> 
+                            <strong style="color: var(--color1);">87 Lacs*</strong> 
+                            <span class="text-sm">Onwards</span> 
+                        </div>
+                        <div class="sizediv d-flex justify-content-center align-items-center"> 
+                            <span class="size">Size : </span> 1200 
+                            <span class="size">Sq.Ft.</span> 
+                        </div>
+                        <div class="btndiv"><button class="custombtn" data-toggle="modal" data-target="#customModal">Inquiry now</button></div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cardinner">
+                        <img class="indicaterline" src="images/others/line.png" alt="">
+                        <div class="head NovaSquareFont">2 BHK</div>
+                        <div class="text d-flex align-items-center justify-content-center"> 
+                            <span class="text-sm">Price : </span> 
+                            <strong style="color: var(--color1);">2 Cr*</strong> 
+                            <span class="text-sm">Onwards</span> 
+                        </div>
+                        <div class="sizediv d-flex justify-content-center align-items-center"> 
+                            <span class="size">Size : </span> 1200 
+                            <span class="size">Sq.Ft.</span> 
+                        </div>
+                        <div class="btndiv"><button class="custombtn" data-toggle="modal" data-target="#customModal">Inquiry now</button></div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cardinner">
+                        <img class="indicaterline" src="images/others/line.png" alt="">
+                        <div class="head NovaSquareFont">3 BHK</div>
+                        <div class="text d-flex align-items-center justify-content-center"> 
+                            <span class="text-sm">Price : </span> 
+                            <strong style="color: var(--color1);">2.5 Cr*</strong> 
+                            <span class="text-sm">Onwards</span> 
+                        </div>
+                        <div class="sizediv d-flex justify-content-center align-items-center"> 
+                            <span class="size">Size : </span> 1200 
+                            <span class="size">Sq.Ft</span> 
+                        </div>
+                        <div class="btndiv"><button class="custombtn" data-toggle="modal" data-target="#customModal">Inquiry now</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!---------------- Price List Section Codes End From Here --------------->
-
+    
     <!---------------- Amenities Section Codes Start From Here --------------->
     <section class="container-fluid amenities-container" id="amenities">
-        <!-- https://gtftech.co.in/sk-layout-5/#amenities -->
+        <div class="patterndiv"></div>
+        <div class="wrapper">
+            <div class="head-div">
+                <div class="title NovaSquareFont">Amenities</div>
+                <span class="pera">Top-Tier Amenities Unveiled</span>
+            </div>
+            <div class="flexdiv row justify-content-center align-items-center">
+                <div class="leftdiv">
+                    <figure class="imgbox">
+                        <img class="am-images" data-toggle="modal" data-target="#customModal" src="images/amenities/am1.png" alt="amenities">
+                        <figcaption class="fig-cap">Fitness Center</figcaption>
+                    </figure>
+                </div>
+                <div class="centerd-div d-flex f-wrap align-items-center">
+                    <div class="left-inner">
+                        <figure class="imgbox">
+                            <img class="am-images" data-toggle="modal" data-target="#customModal" src="images/amenities/am2.png" alt="amenities">
+                            <figcaption class="fig-cap">Swimming Pool</figcaption>
+                        </figure>
+                        <figure class="imgbox">
+                            <img class="am-images" data-toggle="modal" data-target="#customModal" src="images/amenities/am3.png" alt="amenities">
+                            <figcaption class="fig-cap">Car Parking </figcaption>
+                        </figure>
+                    </div>                    
+                    <div class="right-inner">
+                        <figure class="imgbox">
+                            <img class="am-images" data-toggle="modal" data-target="#customModal" src="images/amenities/am4.png" alt="amenities">
+                            <figcaption class="fig-cap">Spa And Wellness Center</figcaption>
+                        </figure>
+                        <figure class="imgbox">
+                            <img class="am-images" data-toggle="modal" data-target="#customModal" src="images/amenities/am5.png" alt="amenities">
+                            <figcaption class="fig-cap">High-Speed Internet</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="rightdiv">
+                    <figure class="imgbox">
+                        <img class="am-images" data-toggle="modal" data-target="#customModal" src="images/amenities/am6.png" alt="amenities">
+                        <figcaption class="fig-cap">24x7 Security</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
     </section>
     <!---------------- Amenities Section Codes End From Here --------------->
     
@@ -198,11 +296,41 @@
      <section class="container-fluid floorplan-container" id="floor-plan"></section>
      <!---------------- Floor Plan Section Codes End From Here --------------->    
 
-     <!---------------- location Section Codes End From Here --------------->    
+     <!---------------- location Section Codes End From Here --------------->   
+     <!-- Section Merged with contact-us  -->
     <section class="container-fluid location-container position-relative" id="location"></section>
 
     <!---------------- Gallery Section Codes Start From Here --------------->
-    <section class="container-fluid gallery-container" id="gallery"></section>
+    <section class="container-fluid gallery-container" id="gallery">
+        <div class="wrapper">
+            <div class="head-div">
+                <div class="heading">Gallery</div>
+                <p></p>
+            </div>
+            <div class="row flexdiv">
+                <div class="col-md-8 p-0 cols">
+                    <a href="images/gallery/g1.jpg" class="with-caption image-link">
+                        <img src="images/gallery/g1-sm.jpg" alt="gallery">
+                    </a>
+                </div>
+                <div class="col-md-4 p-0 cols">
+                    <a href="images/gallery/g2.jpg" class="with-caption image-link">
+                        <img src="images/gallery/g2-sm.jpg" alt="gallery">
+                    </a>
+                </div>
+                <div class="col-md-4 p-0 cols">
+                    <a href="images/gallery/g3.jpg" class="with-caption image-link">
+                        <img src="images/gallery/g3-sm.jpg" alt="gallery">
+                    </a>
+                </div>
+                <div class="col-md-8 p-0 cols">
+                    <a href="images/gallery/g4.jpg" class="with-caption image-link">
+                        <img src="images/gallery/g4-sm.jpg" alt="gallery">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <!---------------- Gallery Section Codes End From Here --------------->
 
     <!---------------- Contact Section Codes Start From Here --------------->
@@ -286,45 +414,47 @@
     <!-- mobile-section-footer -->
 
     <!-- modal -->
-    <div class="modal fade modal1" id="customModal" tabindex="-1" aria-labelledby="customModalLabel" aria-modal="true" role="dialog">
+    <div class="modal fade modal1 theModal" id="customModal" tabindex="-1" aria-labelledby="customModalLabel" aria-modal="true" role="dialog">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="flexdiv d-flex justify-content-between">
-                <h3 class="modal-head NovaSquareFont ">Demo Project</h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; right: 15px;"><svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="#000" class="bi bi-x-lg" viewBox="0 0 16 16">
-                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"></path>
-                  </svg></button>
+            <div class="modal-head-div">
+                <div class="flexdiv d-flex justify-content-between">
+                    <h3 class="modal-head NovaSquareFont ">Demo Project</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"></path>
+                    </svg></button>
+                </div>
+                <p class="modal-para" style="text-transform: capitalize;">Project Location Here... </p>
             </div>
-            <p class="modal-para" style="text-transform: capitalize;">Project Location Here... </p>
             <div class="banner-form-section" autocomplete="off">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <div class="form-floating mb-3" style="position: relative;">
+                    <div class="col-12 coldiv">
+                        <div class="form-floating" style="position: relative;">
                             <input class="form-control" type="text" id="qSenderNamemodal" name="name_contact" placeholder="Your Name">                            
                         </div>
                     </div>
-                    <div class="col-sm-12">
-                        <div class="form-floating mb-3" style="position: relative;">
+                    <div class="col-12 coldiv">
+                        <div class="form-floating" style="position: relative;">
                             <input class="form-control" type="text" id="qMobileNomodal" name="phone_contact" placeholder="Your Mobile Number">                            
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12">
-                        <div class="form-floating mb-3" style="position: relative;">
+                    <div class="col-12 coldiv">
+                        <div class="form-floating" style="position: relative;">
                             <input class="form-control" type="email" id="qEmailIDmodal" name="email_contact" placeholder="Your Email Address">
                         </div>
                     </div>
-                    <div class="col-sm-12">
-                        <div class="form-floating mb-3" style="position: relative;">
+                    <div class="col-12 coldiv">
+                        <div class="form-floating" style="position: relative;">
                             <input class="form-control" placeholder="Message" id="qMessagemodal" name="message_contact">
                         </div>
                     </div>
                 </div>
-                <!-- <p style="font-weight: 400;color: #000;opacity: 1;font-size:11px;letter-spacing: 0.5px;margin:0;line-height:15px; margin-top:12px;"><input type="checkbox" id="checkboxx" checked="" name="subscribe" value="check"> I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.</p> -->
+                <p style="font-weight: 400;color: #000;opacity: 1;font-size:10px;letter-spacing: 0.5px;margin:0;line-height:15px; margin-bottom: 15px;"><input type="checkbox" onclick="return false" checked> I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.</p>
                 <div class="row">
-                    <div class="col-md-12 mb-2">
-                        <button class="appbtn gradient w-100" id="SubmitQuerymodal">submit</button>
+                    <div class="col-md-12 pb-2">
+                        <button class="custombtn btnoutline w-100" id="SubmitQuerymodal">submit now</button>
                     </div>
                 </div>
             </div>
@@ -337,41 +467,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-
-    <!-- header script -->
-    <script>
-
-        setTimeout(() => {
-            // $("#customModal").modal('show')
-        }, 5000);
-
-        $(".menuIcon").click(function(){
-            $(".asidebar").addClass("active")
-            $(".overlay").addClass("active")
-        })
-
-        $(".menuCloseBtn, .Navbar .nav-item, .overlay").click(function(){
-            $(".asidebar").removeClass("active")
-            $(".overlay").removeClass("active")
-        })
-       
-        $(".reamoredbtn").click(function(){
-            $(".moretext").slideToggle("slow");
-            if($(this).text()=="Read More") $(this).text("Read Less")
-            else $(this).text("Read More");
-        });
-
-        $('.asidebar .nav-item').on('click',function (e) {
-            var target = this.hash,
-            $target = $(target);
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top-50
-            }, 100, 'swing', function () {
-                window.location.hash = target;
-            });
-        });
-    </script>
-
 
     <script type="text/javascript" language="javascript">
         var versionUpdate = (new Date()).getTime();
@@ -397,20 +492,9 @@
         $("#SubmitQuery").click(function () {
             var FormInfo = {
                 "SenderControlID": "qSenderName",
-                "SenderControlMobileID": "qMobileNo",
-                "SenderControlEmailID": "qEmailID",
-                "SenderControlMsgID": "qMessage"
-            };
-
-            SubmitQueryData(AgentInfo, FormInfo);
-        });
-
-        $("#SubmitQuery1").click(function () {
-            var FormInfo = {
-                "SenderControlID": "qSenderName1",
-                "SenderControlMobileID": "qMobileNo1",
-                "SenderControlEmailID": "qEmailID1",
-                "SenderControlMsgID": "qMessage1"
+                "SenderControlMobileID": "qSenderMobileNo",
+                "SenderControlEmailID": "qSenderEmailID",
+                "SenderControlMsgID": "qSenderMessage"
             };
 
             SubmitQueryData(AgentInfo, FormInfo);
@@ -474,32 +558,65 @@
         });
     </script>
     <!--------------------- End Here Images Zooming Plugin  ----------------->
-    <!---------------------  Menu Set With Section Plugin  Plz Add This Class nav-link-custom in Your a Tag ----------------->
+    
+    <!-- custom Scripts -->
     <script>
-        $('.nav-link-custom').on('click', function (e) {
-            // e.preventDefault();
-
-            var target = this.hash,
-                $target = $(target);
-
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top - 70
-            }, 500, 'swing', function () {
-                window.location.hash = target;
-            });
-        });
-
-    </script>
-    <!--------------------- End Here Menu Set With Section Plugin  Plz Add This Class nav-link-custom in Your a Tag ----------------->
-    <!-------------------For Close Your Navbar In Mobile On Click A Tag  ------------------------>
-    <script>
+        
+        // header script
         $(document).ready(function () {
-            $(".nav-item-2").click(function () {
-                $(".collapse").removeClass("show");
+            $(".menuIcon").click(function(){
+                $(".asidebar").addClass("active")
+                $(".overlay").addClass("active")
+            })
+            $(".menuCloseBtn, .Navbar .nav-item, .overlay").click(function(){
+                $(".asidebar").removeClass("active")
+                $(".overlay").removeClass("active")
             });
-        });
+
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 70) {
+                    $(".headermain").addClass("active");
+                } else {
+                    $(".headermain").removeClass("active");
+                }
+            });
+
+            $(".reamoredbtn").click(function(){
+                $(".moretext").slideToggle("slow");
+                if($(this).text()=="Read More") $(this).text("Read Less")
+                else $(this).text("Read More");
+            });
+
+            $('.asidebar .nav-item').on('click',function (e) {
+                var target = this.hash,
+                $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top-50
+                }, 100, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+            $('.nav-link-custom').on('click', function (e) {
+                // e.preventDefault();
+
+                var target = this.hash,
+                    $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top - 70
+                }, 500, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+
+            setTimeout(() => {
+                // $("#customModal").modal('show')
+            }, 5000);
+        })
     </script>
-    <!------------------- End Here For Close Your Navbar In Mobile On Click A Tag  ------------------------>
+    <!--end custom Scripts -->    
+
 </body>
 
 </html>
