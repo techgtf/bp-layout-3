@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/magnific-popup.css">    
+    <style>
+        /* Css for animation effect */
+        /* .animation-section {opacity: 0.5;transform: translateY(30px);transition: opacity 0.6s ease-out, transform 0.6s ease-out;}
+        .animation-section.visible {opacity: 1;transform: translateY(0);} */
+    </style>
 </head>
 
 <body>
@@ -35,12 +40,14 @@
             <span class="menuCloseBtn" style="filter: invert(1); cursor: pointer;"><img src="images/icons/closeIcon.svg" alt=""></span>
         </div>
         <ul class="Navbar">
-            <li class="nav-item"><a class="active" href="#">Home</a></li>
+            <!-- <li class="nav-item"><a class="active" href="#">Home</a></li> -->
             <li class="nav-item"><a  href="#overview">Overview</a></li>
-            <li class="nav-item"><a href="#">Highlights</a></li>
-            <li class="nav-item"><a href="#price-list">Price list</a></li>
+            <li class="nav-item"><a href="#highlights">Highlights</a></li>
+            <!-- <li class="nav-item"><a href="#price-list">Price list</a></li> -->
+            <li class="nav-item"><a href="#floor-plan">Price list</a></li>
             <li class="nav-item"><a href="#amenities">Amenities</a></li>
             <li class="nav-item"><a href="#floor-plan">Floor Plan</a></li>
+            <li class="nav-item"><a href="#contact-us">Location Map</a></li>
             <li class="nav-item"><a href="#gallery">Gallery</a></li>
             <li class="nav-item"><a href="#contact-us">Contact Us</a></li>
         </ul>    
@@ -49,7 +56,7 @@
     <!-- -------------- Menu Section Codes End From Here ------------- -->
 
     <!---------------- Slider Section Codes Start From Here --------------->
-    <section class="container-fluid banner-section p-0">
+    <section class="container-fluid banner-section animation-section p-0">
         <div class="wrapper">
             <div id="carouselExampleIndicators" class="carousel slide carousel-fade sliderdiv" data-ride="carousel" data-interval="2500">
                 <ol class="carousel-indicators" style="display: none;">
@@ -81,12 +88,12 @@
             <!-- Start .content-over-banner -->
             <div class="content-over-banner d-flex f-wrap">
                 <div class="textdiv">
-                    <p class="smallheading"style="color: var(--black);">Status</p>
-                    <span class="span"style="color: var(--black); font-family: 'NovaSquare';">New Launch</span>
+                    <p class="smallheading NovaSquareFont">Status : </p>
+                    <span class="span"style="color: var(--black);">New Launch</span>
                 </div>
                 <div class="textdiv">
-                    <p class="smallheading" style="color: var(--black);">Rera No.</p>
-                    <span class="span"style="color: var(--black);font-family: 'NovaSquare'; ">xxxx/xxxx/xxxxx/xxxx</span>
+                    <p class="smallheading NovaSquareFont">Payment Plan :</p>
+                    <span class="span"style="color: var(--black);"> 30-40-20</span>
                 </div>
             </div>
             <!-- End .content-over-banner -->
@@ -123,7 +130,7 @@
     <!---------------- Slider Section Codes End From Here --------------->
 
     <!---------------- Overview Section Codes Start From Here --------------->
-    <section class="container-fluid overview-container" id="overview" style="position: relative;">
+    <section class="container-fluid overview-container animation-section" id="overview" style="position: relative;">
         <div class="patterndiv" style="background: url(images/overview/overview-bg-1.png); opacity: 0.3; background-size: unset;"></div>
         <div class="wrapper">
             <div class="flexrow d-flex f-wrap">
@@ -146,7 +153,7 @@
                         <div class="f"></div>
                         <div class="g"></div>
                     </div>
-                    <button class="custombtn circlebtn btnanimation" data-target="#customModal" data-toggle="modal">Get More Insights</button>
+                    <button class="custombtn circlebtn" data-target="#customModal" data-toggle="modal">Get More Insights</button>
                 </div>
             </div>            
         </div>
@@ -154,7 +161,7 @@
     <!---------------- Overview Section Codes End From Here --------------->
 
     <!---------------- Highlights Section Codes Start From Here --------------->
-    <section class="container-fluid highlights-contaier" id="highlights">
+    <section class="container-fluid highlights-contaier animation-section" id="highlights">
         <div class="patterndiv"></div>
         <div class="wrapper">
             <div class="flexdiv d-flex f-wrap">
@@ -183,11 +190,11 @@
     <!---------------- Highlights Section Codes End From Here --------------->
 
     <!---------------- Price List Section Codes Start From Here --------------->
-    <section class="container-fluid pricelist-container" id="price-list" style="background: url(images/bg.jpg) no-repeat; background-size: cover; background-attachment: fixed;">
+    <section class="container-fluid pricelist-container animation-section d-none" id="price-list" style="background: url(images/bg.jpg) no-repeat; background-size: cover; background-attachment: fixed;">
         <div class="wrapper">
             <div class="headingsection d-flex justify-content-center">
                 <h1 class="heading NovaSquareFont">Price List</h1>
-                <p class="desc" style="color: var(--color1);">Quality That Fits Your Budget</p>
+                <p class="desc" style="color: var(--color1);">Unlock the Door to Affordable Luxury</p>
             </div>
             <div class="flexdiv d-flex f-wrap justify-content-center">
                 <!-- cards -->
@@ -245,7 +252,7 @@
     <!---------------- Price List Section Codes End From Here --------------->
     
     <!---------------- Amenities Section Codes Start From Here --------------->
-    <section class="container-fluid amenities-container" id="amenities">
+    <section class="container-fluid amenities-container animation-section" id="amenities">
         <div class="patterndiv"></div>
         <div class="wrapper">
             <div class="head-div">
@@ -293,19 +300,61 @@
     <!---------------- Amenities Section Codes End From Here --------------->
     
      <!---------------- Floor Plan Section Codes Start From Here --------------->
-     <section class="container-fluid floorplan-container" id="floor-plan"></section>
+     <section class="container-fluid floorplan-container animation-section" id="floor-plan">
+        <div class="wrapper">
+            <div class="head-div">
+                <div class="title NovaSquareFont">Floor Plan & Price List</div>
+                <span class="pera">Unlock the Door to Affordable Luxury</span>
+            </div>
+            <div class="row justify-content-center flexdiv p-0">
+                <div class="col-md-6 cols d-flex f-wrap">
+                    <div class="col-md-6 divleft p-0">
+                        <a href="images/f-plans/f-plan.webp" class="with-caption image-link" title="Floor Plan">
+                            <img src="images/f-plans/plan.jpg" alt="Floor Plan">
+                        </a>
+                        <button class="custombtn btnoutline" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" data-target="#customModal" data-toggle="modal">View Plan</button>
+                    </div>
+                    <div class="col-md-6 divright d-flex align-items-center justify-content-center">
+                        <div class="div-inner">
+                            <h3 class="plan-type"> 1 BHK</h3>
+                            <div class="pricediv d-flex align-items-center justify-content-center"> Price :  <strong class="pricetext NovaSquareFont" style="color:var(--color1);">87 Lacs*</strong> Onwards* </div>
+                            <div class="areadiv d-flex align-items-center justify-content-center">Size : <strong class="sizetext NovaSquareFont" style="color: var(--color1);">1200</strong> Sq.Ft. </div>
+                            <button class="custombtn btnoutline" data-target="#customModal" data-toggle="modal">Inquiry Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 cols d-flex f-wrap">
+                    <div class="col-md-6 divleft p-0">
+                        <a href="images/f-plans/f-plan.webp" class="with-caption image-link" title="Floor Plan">
+                            <img src="images/f-plans/plan.jpg" alt="Floor Plan">
+                        </a>
+                        <button class="custombtn btnoutline" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" data-target="#customModal" data-toggle="modal">View Plan</button>
+                    </div>
+                    <div class="col-md-6 divright d-flex align-items-center justify-content-center">
+                        <div class="div-inner">
+                            <h3 class="plan-type"> 2 BHK</h3>
+                            <div class="pricediv d-flex align-items-center justify-content-center"> Price :  <strong class="pricetext NovaSquareFont" style="color:var(--color1);">2 Cr*</strong> Onwards* </div>
+                            <div class="areadiv d-flex align-items-center justify-content-center">Size : <strong class="sizetext NovaSquareFont" style="color: var(--color1);">1800</strong> Sq.Ft. </div>
+                            <button class="custombtn btnoutline" data-target="#customModal" data-toggle="modal">Inquiry Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+     </section>
      <!---------------- Floor Plan Section Codes End From Here --------------->    
 
      <!---------------- location Section Codes End From Here --------------->   
      <!-- Section Merged with contact-us  -->
-    <section class="container-fluid location-container position-relative" id="location"></section>
+    <!-- <section class="container-fluid location-container position-relative" id="location"></section> -->
 
     <!---------------- Gallery Section Codes Start From Here --------------->
-    <section class="container-fluid gallery-container" id="gallery">
+    <section class="container-fluid gallery-container animation-section" id="gallery">
         <div class="wrapper">
             <div class="head-div">
-                <div class="heading">Gallery</div>
-                <p></p>
+                <div class="title NovaSquareFont">Gallery</div>
+                <p class="desc">Luxury Experience</p>
             </div>
             <div class="row flexdiv">
                 <div class="col-md-8 p-0 cols">
@@ -334,8 +383,12 @@
     <!---------------- Gallery Section Codes End From Here --------------->
 
     <!---------------- Contact Section Codes Start From Here --------------->
-    <section class="container-fluid contact-container contact-section" id="contact-us">
+    <section class="container-fluid contact-container animation-section contact-section" id="contact-us">
         <div class="contact-wrapper">
+            <div class="head-div">
+                <div class="title NovaSquareFont">Location Advantage</div>
+                <span class="pera">Experience Elevated Comfort In Every Detail</span>
+            </div>
             <div class="d-flex flexrow f-wrap">
                 <div class="col-md-5 from-col">
                     <h2 class="heading NovaSquareFont">Get In Touch</h2>
@@ -361,7 +414,7 @@
                 </div>
                 <div class="col-md-7 right-col">
                     <div class="imgbox position-relative">
-                        <a href="images/map-sm.jpg" class="with-caption image-link" title="Map">
+                        <a href="images/map-sm.jpg" class="with-caption image-link" title="View Map">
                             <img src="images/map-sm.jpg" alt="">
                         </a>
                         <!-- <button class="custombtn btnoutline" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">View Full Map</button> -->
@@ -395,13 +448,36 @@
                     </div>                    
                 </div>
             </div>
-
         </div>
     </section>
     <!---------------- Contact Section Codes End From Here --------------->
 
     <!-- .sitefooter start -->
-    <footer class="sitefooter container-fluid"></footer>
+    <footer class="sitefooter container-fluid animation-section" style="position: relative;">
+        <div class="footerinner">            
+            <div class="about-div" id="aboutus">
+                <div class="wrapper">
+                    <h3 class="heading NovaSquareFont">About Developer</h3>
+                    <span class="location">Location Here..</span>
+                    <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores assumenda placeat voluptatum rem, id molestiae animi nostrum dolorem quia magni ipsum pariatur iste maxime dolore corrupti iusto aspernatur consequuntur commodi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores assumenda placeat voluptatum rem, id molestiae animi nostrum dolorem quia magni ipsum pariatur iste maxime dolore corrupti iusto aspernatur consequuntur commodi?</p>                
+                    <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores assumenda placeat voluptatum rem, id molestiae animi nostrum dolorem quia magni ipsum pariatur iste maxime dolore corrupti iusto aspernatur consequuntur commodi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores assumenda placeat voluptatum rem, id molestiae animi nostrum dolorem quia magni ipsum pariatur iste maxime dolore corrupti iusto aspernatur consequuntur commodi?</p>                
+                </div>
+            </div>
+            <div class="bottomfooter">
+                <div class="wrapper">
+                    <div class="dis-div">
+                        <b>Disclaimer : </b>
+                        <span class="text-disclaimer"> The images displayed on the website are for representation purposes only and may not reflect the actual properties accurately. Please note that this is the official website of an authorized marketing partner. We may share data with Real Estate Regulatory Authority (RERA) registered brokers/companies for further processing as required. We may also send updates and information to the mobile number or email ID registered with us. All rights reserved.</span>
+                        <span class="text-disclaimer readmoretext" style="display: none;"> The images displayed on the website are for representation purposes only and may not reflect the actual properties accurately. Please note that this is the official website of an authorized marketing partner. We may share data with Real Estate Regulatory Authority (RERA) registered brokers/companies for further processing as required. We may also send updates and information to the mobile number or email ID registered with us. All rights reserved.</span>
+                    </div>
+                    <button class="custombtn btnoutline btn-readmore rounded py-1 text-capitalize mt-3">Read More</button>
+                    <div class="rera-div">
+                        Agent Rera : <span>xxxxxxxxxxxx</span> || Project Rera : <span>xxxxxxxxxxxx</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- .sitefooter end -->
 
 
@@ -582,33 +658,43 @@
                 }
             });
 
+            // $(document).ready(function() {
+            //     let lastScrollTop = 0;
+            //     $(window).scroll(function() {
+            //         let currentScrollTop = $(this).scrollTop();                    
+            //         if (currentScrollTop === 0) {
+            //         $('.headermain').removeClass('active');
+            //         } else if (currentScrollTop < lastScrollTop) {
+            //         $('.headermain').addClass('active');
+            //         } else {
+            //         $('.headermain').removeClass('active');
+            //         }
+            //         lastScrollTop = currentScrollTop;
+            //     });
+            // });
+
+
             $(".reamoredbtn").click(function(){
                 $(".moretext").slideToggle("slow");
                 if($(this).text()=="Read More") $(this).text("Read Less")
                 else $(this).text("Read More");
             });
 
-            $('.asidebar .nav-item').on('click',function (e) {
+            $('.asidebar .nav-item a').on('click',function (e) {
                 var target = this.hash,
                 $target = $(target);
                 $('html, body').stop().animate({
-                    'scrollTop': $target.offset().top-50
+                    'scrollTop': $target.offset().top-40
                 }, 100, 'swing', function () {
                     window.location.hash = target;
                 });
-            });
-            $('.nav-link-custom').on('click', function (e) {
-                // e.preventDefault();
+            });           
 
-                var target = this.hash,
-                    $target = $(target);
-
-                $('html, body').stop().animate({
-                    'scrollTop': $target.offset().top - 70
-                }, 500, 'swing', function () {
-                    window.location.hash = target;
-                });
-            });
+            $(".btn-readmore").click(function(){
+                $(".readmoretext").toggle('slow')
+                if($(this).text()=='Read More') $(this).text("Read Less")
+                else $(this).text("Read More")
+            })
 
             setTimeout(() => {
                 // $("#customModal").modal('show')
@@ -617,6 +703,22 @@
     </script>
     <!--end custom Scripts -->    
 
+
+    <!-- script for animation effect -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('visible');
+                    else entry.target.classList.remove('visible');
+                });
+            }, {
+                rootMargin: '0px',
+                threshold: 0.1
+            });            
+            document.querySelectorAll('.animation-section').forEach(section => observer.observe(section));
+        });
+    </script>
 </body>
 
 </html>

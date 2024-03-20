@@ -22,8 +22,8 @@ button{cursor: pointer;}
 /* common classes */
 .NovaSquareFont{font-family: "NovaSquare";}
 .popinsBoldFont{font-family: "popins_bold";}
-.overlay.active {background: rgba(0, 0, 0, 0.8);position: fixed;display: block;width: 100%;height: 100%;z-index: 8;left: 0;top: 0;opacity: 70%;-webkit-transition: var(--transition);transition: var(--transition);cursor: pointer;}
-.custombtn{text-transform: uppercase;font-size: 16px;background: var(--color1);color: var(--white);padding: 10px 20px;border-radius: 50px; border: 1px solid transparent;}
+.overlay.active {background: rgba(0, 0, 0, 0.8);position: fixed;display: block;width: 100%;height: 100%;z-index: 10;left: 0;top: 0;opacity: 70%;-webkit-transition: var(--transition);transition: var(--transition);cursor: pointer;}
+.custombtn{text-transform: uppercase;font-size: 16px;background: var(--color1);color: var(--white);padding: 10px 20px;border-radius: 8px;border: 1px solid transparent;}
 .custombtn:hover{background: var(--color1); color: var(--white);}
 .btnoutline{background: transparent; border: 1px solid var(--color1); color: var(--color1); transition: all 0.4s ease-in-out; backdrop-filter: blur(5px);}
 .btnanimation{animation: bganimation infinite 2s;}
@@ -45,7 +45,7 @@ button{cursor: pointer;}
 .headermain .logo{display: inline-block;position: relative;padding: 0 15px;}
 .headermain .menuIcon{position: relative;display: flex;justify-content: center;align-items: center;}
 .headermain .menuIcon img{width: 57px;}
-.headermain .menuIcon::after{content: '';position: absolute;height: 59px;width: 65px;right: 0;background: var(--color1);padding: 4px 5px 4px 7px;/* border-radius: 0 0 0 8px; */}
+.headermain .menuIcon::after{content: '';position: absolute;height: 67px;width: 65px;right: 0;background: var(--color1);padding: 4px 5px 4px 7px;top: -9px;}
 .headermain .ceterdiv .custombtn{min-width: 200px;}
 .headermain .ceterdiv .custombtn svg{height: 20px; width: 20px; fill: invert(1);}
 .headermain .custombtn img{width: 24px;}
@@ -66,12 +66,13 @@ button{cursor: pointer;}
 .banner-section .sliderdiv{width: 70%;}
 .banner-section .sliderdiv .carousel-inner{position: relative;}
 .banner-section .sliderdiv .img-slider{height: 87vh;}
-.bnner-flex-btn{position: absolute;left: 5px;display: flex;width: 5%;justify-content: space-between;opacity: 1;gap: 0 24px;bottom: 27px;}
+.bnner-flex-btn{position: absolute;left: 15px;display: flex;width: 5%;justify-content: space-between;opacity: 1;gap: 0 24px;bottom: 27px;}
 .banner-section .content-over-banner{position: absolute;bottom: 27px;z-index: 1;left: 27%;gap: 0 25px;}
 .content-over-banner .textdiv {backdrop-filter: blur(6px);background: #ffffffba;padding: 10px 15px;min-width: 228px;border-radius: 8px;}
-.content-over-banner .span{font-size: 20px; text-transform: uppercase;}
-.banner-section .carousel-btn{position: unset;background: var(--color1);height: 40px;border-radius: 21px;min-width: 88px;}
-.bannermain-content{width: 30%;color: var(--black);padding:30px 15px 0 35px;position: relative;background: url(../images/others/img.webp);}
+.content-over-banner .smallheading{font-size: 17px;color: var(--color2);}
+.content-over-banner .span{font-size: 20px;text-transform: uppercase;}
+.banner-section .carousel-btn{position: unset;background: var(--color1);height: 40px;border-radius: 8px;min-width: 60px;}
+.bannermain-content{width: 30%;color: var(--black);padding:30px 15px 0 35px;position: relative;background: url(../images/others/img3.png);}
 .bannermain-content .project-address{font-weight: 600; display: inline-block;text-transform: uppercase;}
 .bannermain-content .projectname{font-size: 42px;text-transform: uppercase;font-weight: 600;padding-top: 10px;}
 .bannermain-content .projectname .projlogo{width: 40%;}
@@ -119,7 +120,7 @@ button{cursor: pointer;}
 /* .highlights-contaier */
 .highlights-contaier{padding: 70px 0;background: var(--gray1);position: relative;}
 .highlights-contaier .wrapper{max-width: 1150px;margin: 0 auto;}
-.highlights-contaier .imgdiv{padding-left: 0;}
+/* .highlights-contaier .imgdiv{padding-left: 0;} */
 .highlights-contaier .contentdiv{padding-left: 40px;}
 .highlights-contaier .imgdiv .img{border-radius: 8px;max-height: 494px;width: 100%;}
 .highlights-contaier .title{font-size: 16px; color: var(--black); text-transform: uppercase; border-bottom: 2px solid var(--color2);}
@@ -153,6 +154,17 @@ button{cursor: pointer;}
 
 
 /*Floor And Master Plan Codes Start From Here*/
+.floorplan-container{padding: 70px 0; background: url(../images/bg1.webp);}
+.floorplan-container .wrapper{max-width: 80%; margin: 0 auto;}
+.floorplan-container .head-div{text-align: center; margin-bottom: 40px;}
+.floorplan-container .head-div .title {font-size: 16px;font-weight: 600;border-bottom: 2px solid var(--color2);width: fit-content;margin: 0 auto;}
+.floorplan-container .head-div .pera {font-size: 40px;color: var(--color1);}
+.floorplan-container .flexdiv{gap: 25px 0;}
+.floorplan-container .divleft img{border-radius: 8px 0 0 8px;}
+.floorplan-container .divright{background: #202020; text-align: center; padding: 15px; border-radius: 0 8px 8px 0;}
+.floorplan-container .plan-type{font-size: 40px; color: var(--white); padding-bottom: 15px;}
+.floorplan-container .pricediv, .floorplan-container .areadiv{font-size: 20px; color: var(--white); gap: 0 10px; margin-bottom: 15px;}
+.floorplan-container .pricediv .pricetext, .floorplan-container .areadiv .sizetext{font-size: 35px;}
 /*Floor And Master Plan Codes End From Here*/
 
 /*Amenities Codes Start From Here*/
@@ -160,7 +172,7 @@ button{cursor: pointer;}
 .amenities-container .patterndiv{background: url(../images/others/vector.jpeg);background-repeat: repeat;background-size: contain;/* opacity: 0.1; */}
 .amenities-container .head-div{max-width: fit-content; margin: 0 auto 45px auto; text-align: center;}
 .amenities-container .head-div .title{font-size: 16px;font-weight: 600;border-bottom: 2px solid var(--color2);width: fit-content;margin: 0 auto;}
-.amenities-container .head-div .pera{font-size: 40px;}
+.amenities-container .head-div .pera{font-size: 40px; color: var(--color1);}
 
 .amenities-container .wrapper{max-width: 95%;margin: 0 auto;position: relative;z-index: 1;}
 .amenities-container .flexdiv{gap: 0 72px;}
@@ -176,18 +188,24 @@ button{cursor: pointer;}
 
 
 /*Gallery Codes Start From Here*/
-.gallery-container{padding: 70px 0;}
+.gallery-container{padding: 70px 0; background: url(../images/others/img3.png);}
 .gallery-container .wrapper{max-width: 80%;}
 .gallery-container .cols{border: 5px solid var(--white);}
 .gallery-container .cols img{height: 100%; width: 100%; overflow: hidden; object-fit: cover; height: 400px; transition: var(--transition);}
 .gallery-container .cols img:hover{filter: brightness(0.6);}
+.gallery-container .head-div{text-align: center; margin-bottom: 40px;}
+.gallery-container .head-div .title {font-size: 16px;font-weight: 600;border-bottom: 2px solid var(--color2);width: fit-content;margin: 0 auto; }
+.gallery-container .desc{font-size: 40px;color: var(--color1);}
 /*Gallery Codes End From Here*/
 
 
 /* contact - Form section */
-.contact-section{padding: 70px 0;background: var(--color3);}
+.contact-section{padding: 70px 0;background: var(--gray1);}
 .contact-wrapper{max-width: 1150px; margin: 0 auto;}
-.contact-wrapper .heading{font-size: 40px;color: #000000;margin-bottom: 18px;padding-bottom: 15px;border-bottom: 4px double var(--gray);}
+.contact-section .head-div{text-align: center; margin-bottom: 40px;}
+.contact-section .head-div .title {font-size: 16px;font-weight: 600;border-bottom: 2px solid var(--color2);width: fit-content;margin: 0 auto;}
+.contact-section .head-div .pera {font-size: 40px;color: var(--color1);}
+.contact-wrapper .heading{font-size: 40px;color: var(--color1);margin-bottom: 18px;padding-bottom: 15px;border-bottom: 4px double var(--gray);}
 .contact-section .from-col{background-color: var(--white);padding: 39px;border-radius: 5px;}
 .contact-section .inputbox{margin-bottom: 25px;display: flex;gap: 0 10px;justify-content: space-between;align-items: center;}
 .contact-section .inputbox input{border-bottom: 2px solid var(--gray);width: 73%;padding: 10px 0;}
@@ -197,6 +215,7 @@ button{cursor: pointer;}
 .contact-section .right-col{padding-left: 40px;}
 .contact-section .imgbox{padding: 8px; background: var(--white); border-radius: 5px; margin-bottom: 15px; }
 .contact-section .imgbox img{width: 100%; max-height: 200px; object-fit: cover;}
+.contact-section .imgbox img:hover{filter: brightness(0.6);}
 .contact-section .location-advantage{flex-wrap: wrap;justify-content: space-between;}
 .contact-section .location-advantage .box{padding: 15px 17px;border-radius: 4px;width: 49%;background-color: var(--white);margin-bottom: 15px;}
 .contact-section .location-advantage .title{font-size: 22px;padding-bottom: 0px;display: inline-block;color: #ff5a5f;}
@@ -205,6 +224,17 @@ button{cursor: pointer;}
 
 
 /* Start .sitefooter */
+.sitefooter{padding: 0; position: relative; color: var(--white);}
+.sitefooter::after{position: absolute; content: ''; left: 0; right: 0; top: 0; bottom: 0; height: 100%; width: 100%; background: url(../images/bg.jpg); filter: brightness(0.3);}
+.footerinner{position: relative; z-index: 1;}
+.sitefooter .about-div{ padding: 50px 0; border-bottom: 2px double var(--white);}
+.sitefooter .about-div .wrapper{max-width: 1150px; margin: 0 auto;}
+.sitefooter .about-div .heading{font-size: 40px; padding-bottom: 15px;}
+.sitefooter .about-div .location{font-size: 20px; display: block; padding-bottom: 15px;}
+.sitefooter .about-div .content{font-size: 15px; padding-bottom: 15px;}
+.bottomfooter{padding: 50px;}
+.sitefooter .rera-div{padding-top: 15px;}
+.bottomfooter .wrapper{max-width: 1150px; margin: 0 auto;}
 /* End .sitefooter */
 
 
@@ -229,12 +259,12 @@ button{cursor: pointer;}
 
 @media(max-width: 1600px){
   .banner-section .content-over-banner {bottom: 22px;left: 24%;}
-  .banner-section .sliderdiv .img-slider{height: 89vh;}
+  .banner-section .sliderdiv .img-slider{height: 91vh;}
   .bnner-flex-btn  {bottom: 37px;}
-  .bannermain-content .formdiv{margin-top: 30px;}
+  .bannermain-content .formdiv{margin-top: 34px;width: 100%;}
   .bannermain-content .form-heading {font-size: 30px;}
   .bannermain-content .projectname {font-size: 32px;}
-  .bannermain-content {padding: 7px 15px 0 25px;}
+  .bannermain-content {padding: 7px 18px 0 25px;}
   .bannermain-content .keyhighlights .textdiv {margin-bottom: 13px;}
   .bannermain-content .keyhighlights .span {font-size: 17px;}
   .bannermain-content .formdiv input {padding: 6px 10px;}
@@ -250,7 +280,10 @@ button{cursor: pointer;}
   .amenities-container .am-images{height: 267px;}
   .gallery-container .wrapper{max-width: 97%;}
   .gallery-container .cols img{height: 300px;}
-  
+  .floorplan-container .wrapper{max-width: 1280px;}
+  .floorplan-container .pricediv, .floorplan-container .areadiv{font-size: 18px;}
+  .floorplan-container .plan-type{font-size: 31px;}
+  .floorplan-container .pricediv .pricetext, .floorplan-container .areadiv .sizetext{font-size: 25px;}
 }
 @media(max-width: 1480px){}
 @media(max-width: 1366px){}
