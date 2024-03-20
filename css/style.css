@@ -245,6 +245,8 @@ button{cursor: pointer;}
 /* .mobile-section-footer a:last-child{ border-right: 0;} */
 
 
+
+
 /* #customModal */
 .theModal .modal-content{padding: 35px 34px;}
 .theModal .modal-dialog{max-width: 441px;}
@@ -286,6 +288,7 @@ button{cursor: pointer;}
   .floorplan-container .plan-type{font-size: 31px;}
   .floorplan-container .pricediv .pricetext, .floorplan-container .areadiv .sizetext{font-size: 25px;}
 }
+
 @media(max-width: 1480px){}
 @media(max-width: 1366px){}
 @media(max-width: 1280px){}
