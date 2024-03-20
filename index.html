@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css">    
     <style>
         /* Css for animation effect */
-        /* .animation-section {opacity: 0.5;transform: translateY(30px);transition: opacity 0.6s ease-out, transform 0.6s ease-out;}
-        .animation-section.visible {opacity: 1;transform: translateY(0);} */
+        .animation-section {opacity: 0.5;transform: translateY(30px);transition: opacity 0.6s ease-out, transform 0.6s ease-out;}
+        .animation-section.visible {opacity: 1;transform: translateY(0);}
     </style>
 </head>
 
@@ -469,8 +469,10 @@
                         <b>Disclaimer : </b>
                         <span class="text-disclaimer"> The images displayed on the website are for representation purposes only and may not reflect the actual properties accurately. Please note that this is the official website of an authorized marketing partner. We may share data with Real Estate Regulatory Authority (RERA) registered brokers/companies for further processing as required. We may also send updates and information to the mobile number or email ID registered with us. All rights reserved.</span>
                         <span class="text-disclaimer readmoretext" style="display: none;"> The images displayed on the website are for representation purposes only and may not reflect the actual properties accurately. Please note that this is the official website of an authorized marketing partner. We may share data with Real Estate Regulatory Authority (RERA) registered brokers/companies for further processing as required. We may also send updates and information to the mobile number or email ID registered with us. All rights reserved.</span>
+                        <span class="btn-readmore">Read More</span>
                     </div>
-                    <button class="custombtn btnoutline btn-readmore rounded py-1 text-capitalize mt-3">Read More</button>
+                    <!-- <button class="custombtn btnoutline btn-readmore rounded py-1 text-capitalize mt-3">Read More</button> -->
+                    <p class="mt-3"><a href="disclaimer.html" target="_blank" style="color: var(--color1);">Disclaimer & Privacy Policy</a>  Digital Media Planned By <a href="https://www.gtftechnologies.com/" target="_blank" style="color: var(--color1);">GTF Technologies</a> </p>
                     <div class="rera-div">
                         Agent Rera : <span>xxxxxxxxxxxx</span> || Project Rera : <span>xxxxxxxxxxxx</span>
                     </div>
@@ -691,7 +693,7 @@
             });           
 
             $(".btn-readmore").click(function(){
-                $(".readmoretext").toggle('slow')
+                $(".readmoretext").toggle()
                 if($(this).text()=='Read More') $(this).text("Read Less")
                 else $(this).text("Read More")
             })
