@@ -24,8 +24,8 @@
     <!---------------- Menu Section Codes Start From Here --------------->
     <header class="headermain d-flex align-items-center justify-content-between">        
         <a href="#" class="logo"><img src="images/logos/project-logo.png" alt="logo"></a>
-        <div class="ceterdiv" style="display: flex; gap: 0 15px;"><button class="bookSiteVisit btnanimation custombtn" data-target="#customModal" data-toggle="modal"> Book A Site Visite !</button>
-            <a  href="tel:0123123123" class="Callus custombtn" style="color: var(--white);">91-999-999-9999 </a>
+        <div class="ceterdiv d-flex" style="gap: 0 15px;"><button class="bookSiteVisit btnanimation custombtn" data-target="#customModal" data-toggle="modal"> Book A Site Visit !</button>
+            <a href="tel:0123123123" class="Callus custombtn" style="color: var(--white);">91-999-999-9999 </a>
             <button class="dwonloadbr custombtn btnanimation" data-target="#customModal" data-toggle="modal"> Download Brochure</button>
         </div>
         <div class="menuIcon">
@@ -52,7 +52,6 @@
             <li class="nav-item"><a href="#contact-us">Contact Us</a></li>
         </ul>    
     </aside>
-    
     <!-- -------------- Menu Section Codes End From Here ------------- -->
 
     <!---------------- Slider Section Codes Start From Here --------------->
@@ -63,12 +62,20 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner d-view">
                     <div class="carousel-item active">
-                        <img class="d-block img-slider w-100" src="images/slider-banner/banner.jpg" alt="First slide">
+                        <img class="d-block img-slider w-100" src="images/slider-banner/banner1.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block img-slider w-100" src="images/slider-banner/banner1.jpg" alt="First slide">
+                        <img class="d-block img-slider w-100" src="images/slider-banner/banner2.jpg" alt="First slide">
+                    </div>
+                </div>
+                <div class="carousel-inner m-view">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/slider-banner/banner1-sm.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/slider-banner/banner2-sm.jpg" alt="First slide">
                     </div>
                 </div>
                 <!-- .bnner-flex-btn -->
@@ -83,10 +90,10 @@
                     </a>
                 </div>
                 <!-- end .bnner-flex-btn -->
-            </div>
+            </div>            
 
-            <!-- Start .content-over-banner -->
-            <div class="content-over-banner d-flex f-wrap">
+            <!-- Start .content-over-banner Only for large screen  -->
+            <div class="content-over-banner d-view d-flex f-wrap">
                 <div class="textdiv">
                     <p class="smallheading NovaSquareFont">Status : </p>
                     <span class="span"style="color: var(--black);">New Launch</span>
@@ -100,9 +107,11 @@
 
             <div class="bannermain-content">
                 <div class="contetnwrapper">
-                    <h1 class="project-address">Noida Sector 15</h1>
-                    <div class="projectname">Demo Properties </div>                    
-                    <div class="startingprice" style="color: var(--black);"> <b class="inrIcon" style="color: var(--black);">₹</b>5<b style="font-family:NovaSquare; color: var(--color1);"> Cr* </b> <span class="onwards">Onwards</span> </div>
+                    <div class="content-head">
+                        <h1 class="project-address">Noida Sector 15</h1>
+                        <div class="projectname">Demo Properties </div>                    
+                        <div class="startingprice" style="color: var(--black);"> <b class="inrIcon" style="color: var(--black);">₹</b>5<b style="font-family:NovaSquare; color: var(--color1);"> Cr* </b> <span class="onwards">Onwards</span> </div>
+                    </div>
 
                     <div class="keyhighlights d-flex">
                         <div class="textdiv">
@@ -112,6 +121,15 @@
                         <div class="textdiv">
                             <p class="smallheading" style="color: var(--color1);">Configurations</p>
                             <span class="span" style="color: var(--black);font-family: 'NovaSquare'">4 & 5 BHK <br class="d-view"> APARTMENTS</span>
+                        </div>
+                        <!-- div only for mobile -->
+                        <div class="textdiv m-view">
+                            <p class="smallheading" style="color: var(--color1);">Status </p>
+                            <span class="span"style="color: var(--black);font-family: 'NovaSquare'">New Launch</span>
+                        </div>
+                        <div class="textdiv m-view">
+                            <p class="smallheading" style="color: var(--color1);">Payment Plan</p>
+                            <span class="span" style="color: var(--black);font-family: 'NovaSquare'">30-40-20</span>
                         </div>
                     </div>
                 </div>
@@ -125,6 +143,7 @@
                     <button class="custombtn submitbtn" id="SubmitQuery">Get A Quote </button>
                 </div>
             </div>
+
         </div>
     </section>
     <!---------------- Slider Section Codes End From Here --------------->
@@ -140,7 +159,7 @@
                         <h2 class="heading" style="color: var(--color1);">Discover Spacious 3 & 4 BHK Apartments Awaiting Your Arrival</h2>   
                         <p class="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusantium omnis ex distinctio dicta, optio ipsum mollitia eum amet cumque qui, dolorum quod porro magnam, inventore corrupti animi repellendus culpa. Minima accusantium omnis ex distinctio dicta, optio ipsum mollitia eum amet cumque qui, dolorum quod porro magnam, inventore corrupti animi repellendus culpa.</p>
                     </div>
-                    <img class="img-sm" src="images/overview/overview1.jpg" alt="img">
+                    <img class="img-sm d-view" src="images/overview/overview1.jpg" alt="img">
                 </div>
                 <div class="rightimg col-md-6">
                     <img class="overview-lg-img" src="images/overview/overview.jpg" alt="">                    
@@ -175,80 +194,23 @@
                         <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> 4 & 5 BHK APARTMENTS</li>
                         <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Complete 24/7 Security</li>
                         <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Home Automation Provisions</li>
-                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Lavish Splash Pools In Each 5 BHK Sky Villa</li>
-                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Video Door Phone Armed To The Digital Main Door</li>
+                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Lorem ipsum dolor sit amet consectetur elit.</li>
+                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Lorem ipsum dolor sit amet adipisicing elit.</li>
+                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                     </ul>
                     <!-- <ul class="points">
                         <li class="p-li"> <img src="images/icons/right.png" alt="icon"> Smart Home Design</li>
                         <li class="p-li"> <img src="images/icons/right.png" alt="icon"> LoComplete 24/7 Security</li>
                     </ul> -->
-                    <button class="custombtn btnoutline">Download Brochure </button>
+                    <button class="custombtn btnoutline" data-target="#customModal" data-toggle="modal">Download Brochure </button>
                 </div>
             </div>
         </div>
     </section>
     <!---------------- Highlights Section Codes End From Here --------------->
 
-    <!---------------- Price List Section Codes Start From Here --------------->
-    <section class="container-fluid pricelist-container animation-section d-none" id="price-list" style="background: url(images/bg.jpg) no-repeat; background-size: cover; background-attachment: fixed;">
-        <div class="wrapper">
-            <div class="headingsection d-flex justify-content-center">
-                <h1 class="heading NovaSquareFont">Price List</h1>
-                <p class="desc" style="color: var(--color1);">Unlock the Door to Affordable Luxury</p>
-            </div>
-            <div class="flexdiv d-flex f-wrap justify-content-center">
-                <!-- cards -->
-                <div class="cards">
-                    <div class="cardinner">
-                        <img class="indicaterline" src="images/others/line.png" alt="">
-                        <div class="head NovaSquareFont"> 1 BHK</div>
-                        <div class="text d-flex align-items-center justify-content-center"> 
-                            <span class="text-sm">Price : </span> 
-                            <strong style="color: var(--color1);">87 Lacs*</strong> 
-                            <span class="text-sm">Onwards</span> 
-                        </div>
-                        <div class="sizediv d-flex justify-content-center align-items-center"> 
-                            <span class="size">Size : </span> 1200 
-                            <span class="size">Sq.Ft.</span> 
-                        </div>
-                        <div class="btndiv"><button class="custombtn" data-toggle="modal" data-target="#customModal">Inquiry now</button></div>
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="cardinner">
-                        <img class="indicaterline" src="images/others/line.png" alt="">
-                        <div class="head NovaSquareFont">2 BHK</div>
-                        <div class="text d-flex align-items-center justify-content-center"> 
-                            <span class="text-sm">Price : </span> 
-                            <strong style="color: var(--color1);">2 Cr*</strong> 
-                            <span class="text-sm">Onwards</span> 
-                        </div>
-                        <div class="sizediv d-flex justify-content-center align-items-center"> 
-                            <span class="size">Size : </span> 1200 
-                            <span class="size">Sq.Ft.</span> 
-                        </div>
-                        <div class="btndiv"><button class="custombtn" data-toggle="modal" data-target="#customModal">Inquiry now</button></div>
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="cardinner">
-                        <img class="indicaterline" src="images/others/line.png" alt="">
-                        <div class="head NovaSquareFont">3 BHK</div>
-                        <div class="text d-flex align-items-center justify-content-center"> 
-                            <span class="text-sm">Price : </span> 
-                            <strong style="color: var(--color1);">2.5 Cr*</strong> 
-                            <span class="text-sm">Onwards</span> 
-                        </div>
-                        <div class="sizediv d-flex justify-content-center align-items-center"> 
-                            <span class="size">Size : </span> 1200 
-                            <span class="size">Sq.Ft</span> 
-                        </div>
-                        <div class="btndiv"><button class="custombtn" data-toggle="modal" data-target="#customModal">Inquiry now</button></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!---------------- Price List Section Codes Start From Here --------------->    
     <!---------------- Price List Section Codes End From Here --------------->
     
     <!---------------- Amenities Section Codes Start From Here --------------->
@@ -300,8 +262,8 @@
     <!---------------- Amenities Section Codes End From Here --------------->
     
      <!---------------- Floor Plan Section Codes Start From Here --------------->
-     <section class="container-fluid floorplan-container animation-section" id="floor-plan">
-        <div class="wrapper">
+     <section class="container-fluid floorplan-container animation-section " id="floor-plan">
+        <div class="wrapper container">
             <div class="head-div">
                 <div class="title NovaSquareFont">Floor Plan & Price List</div>
                 <span class="pera">Unlock the Door to Affordable Luxury</span>
@@ -357,22 +319,22 @@
                 <p class="desc">Luxury Experience</p>
             </div>
             <div class="row flexdiv">
-                <div class="col-md-8 p-0 cols">
+                <div class="col-md-8 p-0 col-6 cols">
                     <a href="images/gallery/g1.jpg" class="with-caption image-link">
                         <img src="images/gallery/g1-sm.jpg" alt="gallery">
                     </a>
                 </div>
-                <div class="col-md-4 p-0 cols">
+                <div class="col-md-4 p-0 col-6 cols">
                     <a href="images/gallery/g2.jpg" class="with-caption image-link">
                         <img src="images/gallery/g2-sm.jpg" alt="gallery">
                     </a>
                 </div>
-                <div class="col-md-4 p-0 cols">
+                <div class="col-md-4 p-0 col-6 cols">
                     <a href="images/gallery/g3.jpg" class="with-caption image-link">
                         <img src="images/gallery/g3-sm.jpg" alt="gallery">
                     </a>
                 </div>
-                <div class="col-md-8 p-0 cols">
+                <div class="col-md-8 p-0 col-6 cols">
                     <a href="images/gallery/g4.jpg" class="with-caption image-link">
                         <img src="images/gallery/g4-sm.jpg" alt="gallery">
                     </a>
@@ -485,9 +447,9 @@
 
     <!-- mobile-section-footer -->    
     <div class="mobile-section-footer"> 
-        <a href="" title="Enquire Now" data-bs-toggle="modal" data-bs-target="#exampleModal"> Enquire Now</a> 
-        <a href="https://api.whatsapp.com/send?phone=+910123456789  &amp;text=Hello, Looking for 3 and 4 BHK APARTMENTS. Get in touch with me my name is"> WhatsApp</a> 
-        <a href="tel:+910123456789"> Call Now</a>
+        <a class="custombtn btnoutline" href="" title="Enquire Now" data-target="#customModal" data-toggle="modal"> Enquire Now</a> 
+        <a class="custombtn btnoutline" href="tel:+919999999999">9999999999</a>
+        <a class="custombtn btnoutline" href="https://api.whatsapp.com/send?phone=+910123456789  &amp;text=Hello, Looking for 3 and 4 BHK APARTMENTS. Get in touch with me my name is"> WhatsApp</a> 
     </div>
     <!-- mobile-section-footer -->
 
@@ -661,20 +623,14 @@
                 }
             });
 
-            // $(document).ready(function() {
-            //     let lastScrollTop = 0;
-            //     $(window).scroll(function() {
-            //         let currentScrollTop = $(this).scrollTop();                    
-            //         if (currentScrollTop === 0) {
-            //         $('.headermain').removeClass('active');
-            //         } else if (currentScrollTop < lastScrollTop) {
-            //         $('.headermain').addClass('active');
-            //         } else {
-            //         $('.headermain').removeClass('active');
-            //         }
-            //         lastScrollTop = currentScrollTop;
-            //     });
-            // });
+            function checkAndRemoveElement() {
+                if ($(window).width() <= 767) {
+                    $('.d-view').remove();
+                }
+            }
+
+            // Run once when the document is ready
+            checkAndRemoveElement();
 
 
             $(".reamoredbtn").click(function(){
