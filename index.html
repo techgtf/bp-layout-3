@@ -24,8 +24,8 @@
     <!---------------- Menu Section Codes Start From Here --------------->
     <header class="headermain d-flex align-items-center justify-content-between">        
         <a href="#" class="logo"><img src="images/logos/project-logo.png" alt="logo"></a>
-        <div class="ceterdiv d-flex" style="gap: 0 15px;"><button class="bookSiteVisit btnanimation custombtn" data-target="#customModal" data-toggle="modal"> Book A Site Visit !</button>
-            <a href="tel:0123123123" class="Callus custombtn" style="color: var(--white);">91-999-999-9999 </a>
+        <div class="ceterdiv d-flex text-center" style="gap: 0 15px;"><button class="bookSiteVisit btnanimation custombtn" data-target="#customModal" data-toggle="modal"> Book A Site Visit !</button>
+            <a href="tel:0123123123" class="Callus custombtn" style="color: var(--white);">&#9742; 999-999-9999 </a>
             <button class="dwonloadbr custombtn btnanimation" data-target="#customModal" data-toggle="modal"> Download Brochure</button>
         </div>
         <div class="menuIcon">
@@ -92,7 +92,7 @@
                 <!-- end .bnner-flex-btn -->
             </div>            
 
-            <!-- Start .content-over-banner Only for large screen  -->
+            <!-- content-over-banner Only for large screen  -->
             <div class="content-over-banner d-view d-flex f-wrap">
                 <div class="textdiv">
                     <p class="smallheading NovaSquareFont">Status : </p>
@@ -103,7 +103,7 @@
                     <span class="span"style="color: var(--black);"> 30-40-20</span>
                 </div>
             </div>
-            <!-- End .content-over-banner -->
+            <!-- End content-over-banner -->
 
             <div class="bannermain-content">
                 <div class="contetnwrapper">
@@ -136,10 +136,10 @@
 
                 <div class="formdiv">
                     <h2 class="form-heading">Send Us A Message !</h2>
-                    <div class="inputbox"><input type="text" placeholder="Name*" id="qSenderName"></div>
-                    <div class="inputbox"><input type="text" placeholder="Phone*" id="qSenderMobileNo"></div>
-                    <div class="inputbox"><input type="text" placeholder="Email*" id="qSenderEmailID"></div>
-                    <div class="inputbox"><input type="text" placeholder="Message*" id="qSenderMessage"></div>
+                    <div class="inputbox"><input type="text" placeholder="Your Name*" id="qSenderName"></div>
+                    <div class="inputbox"><input type="text" placeholder="Your Contact No.*" id="qSenderMobileNo"></div>
+                    <div class="inputbox"><input type="text" placeholder="Your Email*" id="qSenderEmailID"></div>
+                    <div class="inputbox"><input type="text" placeholder="Your Message*" id="qSenderMessage"></div>
                     <button class="custombtn submitbtn" id="SubmitQuery">Get A Quote </button>
                 </div>
             </div>
@@ -196,8 +196,7 @@
                         <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Home Automation Provisions</li>
                         <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Lorem ipsum dolor sit amet consectetur elit.</li>
                         <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Lorem ipsum dolor sit amet adipisicing elit.</li>
-                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Lorem ipsum dolor sit amet consectetur adipisicing.</li>                        
                     </ul>
                     <!-- <ul class="points">
                         <li class="p-li"> <img src="images/icons/right.png" alt="icon"> Smart Home Design</li>
@@ -354,24 +353,24 @@
             <div class="d-flex flexrow f-wrap">
                 <div class="col-md-5 from-col">
                     <h2 class="heading NovaSquareFont">Get In Touch</h2>
-                    <div class="inputbox">
-                        <span>Name <b style="color: rgb(138, 31, 31);">*</b> </span>
-                        <input type="text" id="" placeholder="Name">
+                    <div class="inputbox f-wrap">
+                        <span>Your Name<b style="color: rgb(138, 31, 31);">*</b> </span>
+                        <input type="text" id="qSenderNamefooter">
                     </div>
-                    <div class="inputbox">
-                        <span>Email <b style="color: rgb(138, 31, 31);">*</b> </span>
-                        <input type="email" id="" placeholder="Email">
+                    <div class="inputbox f-wrap">
+                        <span>Your Email<b style="color: rgb(138, 31, 31);">*</b> </span>
+                        <input type="email" id="qEmailIDfooter">
                     </div>
-                    <div class="inputbox">
-                        <span>Phone No. <b style="color: rgb(138, 31, 31);">*</b> </span>
-                        <input type="text" id="" placeholder="Phone No.">
+                    <div class="inputbox f-wrap">
+                        <span>Your Phone No.<b style="color: rgb(138, 31, 31);">*</b> </span>
+                        <input type="text" id="qMobileNofooter" >
                     </div>
-                    <div class="inputbox">
-                        <span>Message<b style="color: rgb(138, 31, 31);">*</b> </span>
-                        <input type="text" id="" placeholder="Message">
+                    <div class="inputbox f-wrap">
+                        <span>Your Message <b style="color: rgb(138, 31, 31);">*</b> </span>
+                        <input type="text" id="qMessagefooter">
                     </div>
                     <div class="sbmitbtndiv">
-                        <button class="custombtn btnoutline d-flex m-auto">Submit Now</button>
+                        <button class="custombtn btnoutline d-flex m-auto" id="SubmitQueryfooter">Submit Now</button>
                     </div>
                 </div>
                 <div class="col-md-7 right-col">
@@ -420,7 +419,7 @@
             <div class="about-div" id="aboutus">
                 <div class="wrapper">
                     <h3 class="heading NovaSquareFont">About Developer</h3>
-                    <span class="location">Location Here..</span>
+                    <span class="location">Demo Realty</span>
                     <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores assumenda placeat voluptatum rem, id molestiae animi nostrum dolorem quia magni ipsum pariatur iste maxime dolore corrupti iusto aspernatur consequuntur commodi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores assumenda placeat voluptatum rem, id molestiae animi nostrum dolorem quia magni ipsum pariatur iste maxime dolore corrupti iusto aspernatur consequuntur commodi?</p>                
                     <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores assumenda placeat voluptatum rem, id molestiae animi nostrum dolorem quia magni ipsum pariatur iste maxime dolore corrupti iusto aspernatur consequuntur commodi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores assumenda placeat voluptatum rem, id molestiae animi nostrum dolorem quia magni ipsum pariatur iste maxime dolore corrupti iusto aspernatur consequuntur commodi?</p>                
                 </div>
@@ -429,12 +428,12 @@
                 <div class="wrapper">
                     <div class="dis-div">
                         <b>Disclaimer : </b>
-                        <span class="text-disclaimer"> The images displayed on the website are for representation purposes only and may not reflect the actual properties accurately. Please note that this is the official website of an authorized marketing partner. We may share data with Real Estate Regulatory Authority (RERA) registered brokers/companies for further processing as required. We may also send updates and information to the mobile number or email ID registered with us. All rights reserved.</span>
-                        <span class="text-disclaimer readmoretext" style="display: none;"> The images displayed on the website are for representation purposes only and may not reflect the actual properties accurately. Please note that this is the official website of an authorized marketing partner. We may share data with Real Estate Regulatory Authority (RERA) registered brokers/companies for further processing as required. We may also send updates and information to the mobile number or email ID registered with us. All rights reserved.</span>
-                        <span class="btn-readmore">Read More</span>
+                        <span class="text-disclaimer"> The images displayed on the website are for representation purposes only and may not reflect the actual properties  </span>
+                        <span class="text-disclaimer readmoretext" style="display: none;">accurately. Please note that this is the official website of an authorized marketing partner. We may share data with Real Estate Regulatory Authority (RERA) registered brokers/companies for further processing as required. We may also send updates and information to the mobile number or email ID registered with us. All rights reserved. The images displayed on the website are for representation purposes only and may not reflect the actual properties accurately. Please note that this is the official website of an authorized marketing partner. We may share data with Real Estate Regulatory Authority (RERA) registered brokers/companies for further processing as required. We may also send updates and information to the mobile number or email ID registered with us. All rights reserved.</span>
+                        <span class="btn-readmore" style="color: #fff;">Read More</span>
                     </div>
                     <!-- <button class="custombtn btnoutline btn-readmore rounded py-1 text-capitalize mt-3">Read More</button> -->
-                    <p class="mt-3" style="text-align: center;"><a href="disclaimer.html" target="_blank" style="color: var(--color1);">Disclaimer & Privacy Policy</a>  Digital Media Planned By <a href="https://www.gtftechnologies.com/" target="_blank" style="color: var(--color1);">GTF Technologies</a> </p>
+                    <p class="mt-3" style="text-align: center;"><a href="disclaimer.html" target="_blank" style="color: var(--white); text-decoration: underline;">Disclaimer & Privacy Policy</a>  Digital Media Planned By <a href="https://www.gtftechnologies.com/" target="_blank" style="color: var(--white); text-decoration: underline;">GTF Technologies</a> </p>
                     <div class="rera-div" style="text-align: center;">
                         Agent Rera : <span>xxxxxxxxxxxx</span> || Project Rera : <span>xxxxxxxxxxxx</span>
                     </div>
@@ -653,10 +652,19 @@
                 $(".readmoretext").toggle()
                 if($(this).text()=='Read More') $(this).text("Read Less")
                 else $(this).text("Read More")
-            })
+            });
+
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 700) {
+                    $(".mobile-section-footer").addClass("active");
+                } else {
+                    $(".mobile-section-footer").removeClass("active");
+                }
+            });
 
             setTimeout(() => {
-                // $("#customModal").modal('show')
+                $("#customModal").modal('show')
             }, 5000);
         })
     </script>
