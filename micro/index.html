@@ -10,11 +10,12 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">    
     <style>
         /* Css for animation effect */
-        /* .animation-section {opacity: 0.5;transform: translateY(30px);transition: opacity 0.6s ease-out, transform 0.6s ease-out;}
-        .animation-section.visible {opacity: 1;transform: translateY(0);} */
+        .animation-section {opacity: 0.5;transform: translateY(30px);transition: opacity 0.6s ease-out, transform 0.6s ease-out;}
+        .animation-section.visible {opacity: 1;transform: translateY(0);}
     </style>
 </head>
 
@@ -147,68 +148,209 @@
     </section>
     <!---------------- Slider Section Codes End From Here --------------->
 
-
-
-    <main class="our-projects-section" id="our-projects">
+    <!---------------- Overview Section Codes Start From Here --------------->
+    <section class="container-fluid overview-container animation-section" id="overview" style="position: relative;">
+        <div class="patterndiv" style="background: url(images/overview/overview-bg-1.png); opacity: 0.3; background-size: unset;"></div>
         <div class="wrapper">
-            <div class="divflex row p-0 justify-content-center">
-                <div class="flexbox">
-                    <!-- image must be in "background-image" property-->
-                    <div class="imgdiv" style="background-image: url(images/projects/project-name1.jpg); background-size: cover; background-repeat: no-repeat;"></div>
-                    <div class="content-div">
-                        <span class="p-address">Noida Sector 15</span>
-                        <div class="proj-name">Sugam Niavara</div>
-                        <div class="p-typology">3 & 4 Bhk Apartments</div>
-                        <div class="buttons-div d-flex justify-content-between">
-                            <a href="#" class="custombtn btnoutline">Interested</a>
-                            <a href="micro/" class="custombtn btnoutline">View More</a>
-                        </div>
+            <div class="flexrow d-flex f-wrap">
+                <div class="leftdiv col-md-6">
+                    <div class="contentdiv">
+                        <span class="title NovaSquareFont" style="color: var(--black); font-weight: 600;"> Overview </span>
+                        <h2 class="heading" style="color: var(--color1);">Discover Spacious 3 & 4 BHK Apartments Awaiting Your Arrival</h2>   
+                        <p class="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusantium omnis ex distinctio dicta, optio ipsum mollitia eum amet cumque qui, dolorum quod porro magnam, inventore corrupti animi repellendus culpa. Minima accusantium omnis ex distinctio dicta, optio ipsum mollitia eum amet cumque qui, dolorum quod porro magnam, inventore corrupti animi repellendus culpa.</p>
                     </div>
+                    <img class="img-sm d-view" src="images/overview/overview1.jpg" alt="img">
                 </div>
-                <div class="flexbox">
-                    <!-- image must be in "background-image" property-->
-                    <div class="imgdiv" style="background-image: url(images/projects/project-name2.jpg); background-size: cover; background-repeat: no-repeat;"></div>
-                    <div class="content-div">
-                        <span class="p-address">Noida Sector 15</span>
-                        <div class="proj-name">Sugam Niavara</div>
-                        <div class="p-typology">3 & 4 Bhk Apartments</div>
-                        <div class="buttons-div d-flex justify-content-between">
-                            <a href="#" class="custombtn btnoutline">Interested</a>
-                            <a href="micro/" class="custombtn btnoutline">View More</a>
-                        </div>
+                <div class="rightimg col-md-6">
+                    <img class="overview-lg-img" src="images/overview/overview.jpg" alt="">                    
+                    <div class="circle">
+                        <div class="a"> </div>
+                        <div class="b"> </div>
+                        <div class="c"> </div>
+                        <div class="d"> </div>
+                        <div class="e"></div>
+                        <div class="f"></div>
+                        <div class="g"></div>
                     </div>
+                    <button class="custombtn circlebtn" data-target="#customModal" data-toggle="modal">Know More</button>
                 </div>
-                <div class="flexbox">
-                    <!-- image must be in "background-image" property-->
-                    <div class="imgdiv" style="background-image: url(images/projects/project-name1.jpg); background-size: cover; background-repeat: no-repeat;"></div>
-                    <div class="content-div">
-                        <span class="p-address">Noida Sector 15</span>
-                        <div class="proj-name">Sugam Niavara</div>
-                        <div class="p-typology">3 & 4 Bhk Apartments</div>
-                        <div class="buttons-div d-flex justify-content-between">
-                            <a href="#" class="custombtn btnoutline">Interested</a>
-                            <a href="micro/" class="custombtn btnoutline">View More</a>
-                        </div>
-                    </div>
+            </div>            
+        </div>
+    </section>
+    <!---------------- Overview Section Codes End From Here --------------->
+
+    <!---------------- Highlights Section Codes Start From Here --------------->
+    <section class="container-fluid highlights-contaier animation-section" id="highlights">
+        <div class="patterndiv"></div>
+        <div class="wrapper">
+            <div class="flexdiv d-flex f-wrap">
+                <div class="imgdiv col-md-5">
+                    <img class="img" src="images/highlight.jpg" alt="highlight">
+                </div>
+                <div class="contentdiv col-md-7">
+                    <span class="title NovaSquareFont" style="color: var(--black); font-weight: 600;"> Highlights </span>
+                    <h2 class="heading" style="color: var(--color1);">Infuse your home with values of smart living</h2>                    
+                    <ul class="points">
+                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> 4 & 5 BHK APARTMENTS</li>
+                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Complete 24/7 Security</li>
+                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Home Automation Provisions</li>
+                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Lorem ipsum dolor sit amet consectetur elit.</li>
+                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Lorem ipsum dolor sit amet adipisicing elit.</li>
+                        <li class="p-li NovaSquareFont d-flex align-items-center"> <span class="icon">✓</span> Lorem ipsum dolor sit amet consectetur adipisicing.</li>                        
+                    </ul>
+                    <!-- <ul class="points">
+                        <li class="p-li"> <img src="images/icons/right.png" alt="icon"> Smart Home Design</li>
+                        <li class="p-li"> <img src="images/icons/right.png" alt="icon"> LoComplete 24/7 Security</li>
+                    </ul> -->
+                    <button class="custombtn btnoutline" data-target="#customModal" data-toggle="modal">Download Brochure </button>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
+    <!---------------- Highlights Section Codes End From Here --------------->
 
+    <!---------------- Price List Section Codes Start From Here --------------->    
+    <!---------------- Price List Section Codes End From Here --------------->
+    
+    <!---------------- Amenities Section Codes Start From Here --------------->
+    <section class="container-fluid amenities-container animation-section" id="amenities">
+        <div class="patterndiv"></div>
+        <div class="wrapper">
+            <div class="head-div">
+                <div class="title NovaSquareFont">Amenities</div>
+                <span class="pera">Top-Tier Amenities Unveiled</span>
+            </div>
+            <div class="flexdiv row justify-content-center align-items-center">
+                <div class="leftdiv">
+                    <figure class="imgbox">
+                        <img class="am-images" data-toggle="modal" data-target="#customModal" src="images/amenities/am1.png" alt="amenities">
+                        <figcaption class="fig-cap">Fitness Center</figcaption>
+                    </figure>
+                </div>
+                <div class="centerd-div d-flex f-wrap align-items-center">
+                    <div class="left-inner">
+                        <figure class="imgbox">
+                            <img class="am-images" data-toggle="modal" data-target="#customModal" src="images/amenities/am2.png" alt="amenities">
+                            <figcaption class="fig-cap">Swimming Pool</figcaption>
+                        </figure>
+                        <figure class="imgbox">
+                            <img class="am-images" data-toggle="modal" data-target="#customModal" src="images/amenities/am3.png" alt="amenities">
+                            <figcaption class="fig-cap">Car Parking </figcaption>
+                        </figure>
+                    </div>                    
+                    <div class="right-inner">
+                        <figure class="imgbox">
+                            <img class="am-images" data-toggle="modal" data-target="#customModal" src="images/amenities/am4.png" alt="amenities">
+                            <figcaption class="fig-cap">Spa And Wellness Center</figcaption>
+                        </figure>
+                        <figure class="imgbox">
+                            <img class="am-images" data-toggle="modal" data-target="#customModal" src="images/amenities/am5.png" alt="amenities">
+                            <figcaption class="fig-cap">High-Speed Internet</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="rightdiv">
+                    <figure class="imgbox">
+                        <img class="am-images" data-toggle="modal" data-target="#customModal" src="images/amenities/am6.png" alt="amenities">
+                        <figcaption class="fig-cap">24x7 Security</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------- Amenities Section Codes End From Here --------------->
+    
+     <!---------------- Floor Plan Section Codes Start From Here --------------->
+     <section class="container-fluid floorplan-container animation-section " id="floor-plan">
+        <div class="wrapper container">
+            <div class="head-div">
+                <div class="title NovaSquareFont">Floor Plan & Price List</div>
+                <span class="pera">Unlock the Door to Affordable Luxury</span>
+            </div>
+            <div class="row justify-content-center flexdiv p-0">
+                <div class="col-md-6 cols d-flex f-wrap">
+                    <div class="col-md-6 divleft p-0">
+                        <a href="images/f-plans/f-plan.webp" class="with-caption image-link" title="Floor Plan">
+                            <img src="images/f-plans/plan.jpg" alt="Floor Plan">
+                        </a>
+                        <button class="custombtn btnoutline" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" data-target="#customModal" data-toggle="modal">View Plan</button>
+                    </div>
+                    <div class="col-md-6 divright d-flex align-items-center justify-content-center">
+                        <div class="div-inner">
+                            <h3 class="plan-type"> 1 BHK</h3>
+                            <div class="pricediv d-flex align-items-center justify-content-center"> Price :  <strong class="pricetext NovaSquareFont" style="color:var(--color1);">87 Lacs*</strong> Onwards* </div>
+                            <div class="areadiv d-flex align-items-center justify-content-center">Size : <strong class="sizetext NovaSquareFont" style="color: var(--color1);">1200</strong> Sq.Ft. </div>
+                            <button class="custombtn btnoutline" data-target="#customModal" data-toggle="modal">Inquiry Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 cols d-flex f-wrap">
+                    <div class="col-md-6 divleft p-0">
+                        <a href="images/f-plans/f-plan.webp" class="with-caption image-link" title="Floor Plan">
+                            <img src="images/f-plans/plan.jpg" alt="Floor Plan">
+                        </a>
+                        <button class="custombtn btnoutline" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" data-target="#customModal" data-toggle="modal">View Plan</button>
+                    </div>
+                    <div class="col-md-6 divright d-flex align-items-center justify-content-center">
+                        <div class="div-inner">
+                            <h3 class="plan-type"> 2 BHK</h3>
+                            <div class="pricediv d-flex align-items-center justify-content-center"> Price :  <strong class="pricetext NovaSquareFont" style="color:var(--color1);">2 Cr*</strong> Onwards* </div>
+                            <div class="areadiv d-flex align-items-center justify-content-center">Size : <strong class="sizetext NovaSquareFont" style="color: var(--color1);">1800</strong> Sq.Ft. </div>
+                            <button class="custombtn btnoutline" data-target="#customModal" data-toggle="modal">Inquiry Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+     </section>
+     <!---------------- Floor Plan Section Codes End From Here --------------->    
+
+     <!---------------- location Section Codes End From Here --------------->   
+     <!-- Section Merged with contact-us  -->
+    <!-- <section class="container-fluid location-container position-relative" id="location"></section> -->
+
+    <!---------------- Gallery Section Codes Start From Here --------------->
+    <section class="container-fluid gallery-container animation-section" id="gallery">
+        <div class="wrapper">
+            <div class="head-div">
+                <div class="title NovaSquareFont">Gallery</div>
+                <p class="desc">Luxury Experience</p>
+            </div>
+            <div class="row flexdiv">
+                <div class="col-md-8 p-0 col-6 cols">
+                    <a href="images/gallery/g1.jpg" class="with-caption image-link">
+                        <img src="images/gallery/g1-sm.jpg" alt="gallery">
+                    </a>
+                </div>
+                <div class="col-md-4 p-0 col-6 cols">
+                    <a href="images/gallery/g2.jpg" class="with-caption image-link">
+                        <img src="images/gallery/g2-sm.jpg" alt="gallery">
+                    </a>
+                </div>
+                <div class="col-md-4 p-0 col-6 cols">
+                    <a href="images/gallery/g3.jpg" class="with-caption image-link">
+                        <img src="images/gallery/g3-sm.jpg" alt="gallery">
+                    </a>
+                </div>
+                <div class="col-md-8 p-0 col-6 cols">
+                    <a href="images/gallery/g4.jpg" class="with-caption image-link">
+                        <img src="images/gallery/g4-sm.jpg" alt="gallery">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------- Gallery Section Codes End From Here --------------->
 
     <!---------------- Contact Section Codes Start From Here --------------->
     <section class="container-fluid contact-container animation-section contact-section" id="contact-us">
-        <div class="contact-wrapper">            
-            <div class="d-flex flexrow f-wrap ">
-                <div class="col-md-7 right-col">
-                    <div class="head-div">
-                        <div class="title NovaSquareFont">ABOUT US</div>
-                        <span class="pera">Demo Realty</span>
-                    </div>
-                    <p class="about-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores assumenda placeat voluptatum rem, id molestiae animi nostrum dolorem quia magni ipsum pariatur iste maxime dolore corrupti iusto aspernatur consequuntur commodi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores assumenda placeat voluptatum rem, id molestiae animi nostrum dolorem quia magni ipsum pariatur iste maxime dolore corrupti iusto aspernatur consequuntur commodi?</p>
-                    <a href="tel:0123123123" class="Callus custombtn d-block" style="color: var(--white);">☎ 999-999-9999 </a>
-                </div>
-                
+        <div class="contact-wrapper">
+            <div class="head-div">
+                <div class="title NovaSquareFont">Location Advantage</div>
+                <span class="pera">Experience Elevated Comfort In Every Detail</span>
+            </div>
+            <div class="d-flex flexrow f-wrap">
                 <div class="col-md-5 from-col">
                     <h2 class="heading NovaSquareFont">Get In Touch</h2>
                     <div class="inputbox f-wrap">
@@ -231,7 +373,41 @@
                         <button class="custombtn btnoutline d-flex m-auto" id="SubmitQueryfooter">Submit Now</button>
                     </div>
                 </div>
-                
+                <div class="col-md-7 right-col">
+                    <div class="imgbox position-relative">
+                        <a href="images/map-sm.jpg" class="with-caption image-link" title="View Map">
+                            <img src="images/map-sm.jpg" alt="">
+                        </a>
+                        <!-- <button class="custombtn btnoutline" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">View Full Map</button> -->
+                    </div>
+                    <div class="location-advantage d-flex">
+                        <div class="box">
+                            <span class="title NovaSquareFont">05 Min</span>
+                            <p>Columbia Asia Hospital</p>
+                        </div>
+                        <div class="box">
+                            <span class="title NovaSquareFont">05 Min</span>
+                            <p>Columbia Asia Hospital</p>
+                        </div>
+                        <div class="box">
+                            <span class="title NovaSquareFont">05 Min</span>
+                            <p>Columbia Asia Hospital</p>
+                        </div>
+                        <div class="box">
+                            <span class="title NovaSquareFont">05 Min</span>
+                            <p>Columbia Asia Hospital</p>
+                        </div>
+                        <!-- use mb-no on last two location -->
+                        <div class="box mb-no">
+                            <span class="title NovaSquareFont">05 Min</span>
+                            <p>Columbia Asia Hospital</p>
+                        </div>
+                        <div class="box mb-no">
+                            <span class="title NovaSquareFont">05 Min</span>
+                            <p>Columbia Asia Hospital</p>
+                        </div>
+                    </div>                    
+                </div>
             </div>
         </div>
     </section>
@@ -240,6 +416,14 @@
     <!-- .sitefooter start -->
     <footer class="sitefooter container-fluid animation-section" style="position: relative;">
         <div class="footerinner">            
+            <div class="about-div" id="aboutus">
+                <div class="wrapper">
+                    <h3 class="heading NovaSquareFont">About Developer</h3>
+                    <span class="location">Demo Realty</span>
+                    <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores assumenda placeat voluptatum rem, id molestiae animi nostrum dolorem quia magni ipsum pariatur iste maxime dolore corrupti iusto aspernatur consequuntur commodi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores assumenda placeat voluptatum rem, id molestiae animi nostrum dolorem quia magni ipsum pariatur iste maxime dolore corrupti iusto aspernatur consequuntur commodi?</p>                
+                    <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores assumenda placeat voluptatum rem, id molestiae animi nostrum dolorem quia magni ipsum pariatur iste maxime dolore corrupti iusto aspernatur consequuntur commodi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores assumenda placeat voluptatum rem, id molestiae animi nostrum dolorem quia magni ipsum pariatur iste maxime dolore corrupti iusto aspernatur consequuntur commodi?</p>                
+                </div>
+            </div>
             <div class="bottomfooter">
                 <div class="wrapper">
                     <div class="dis-div">
