@@ -199,7 +199,7 @@ button{cursor: pointer;}
 
 /* Start .sitefooter */
 .sitefooter{padding: 0; position: relative; color: var(--white);}
-.sitefooter::after{position: absolute; content: ''; left: 0; right: 0; top: 0; bottom: 0; height: 100%; width: 100%; background: url(../images/bg.jpg); filter: brightness(0.2);}
+.sitefooter::after{position: absolute; content: ''; left: 0; right: 0; top: 0; bottom: 0; height: 100%; width: 100%; background: url(../images/bg.webp); filter: brightness(0.2);}
 .footerinner{position: relative; z-index: 1;}
 .sitefooter .about-div{padding: 50px 0;/* border-bottom: 2px double var(--white); */}
 .sitefooter .about-div .wrapper{max-width: 1150px; margin: 0 auto;}
@@ -272,7 +272,7 @@ button{cursor: pointer;}
 
 /* if need chnage 768 to 767 */
 @media(max-width: 767px){
-    .d-view{display: none;}
+    .d-view{display: none !important;}
     .m-view{display: block;}
 
     /*padding for all section*/

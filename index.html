@@ -39,15 +39,9 @@
             <span class="menuCloseBtn" style="filter: invert(1); cursor: pointer;"><img src="images/icons/closeIcon.svg" alt=""></span>
         </div>
         <ul class="Navbar">
-            <!-- <li class="nav-item"><a class="active" href="#">Home</a></li> -->
-            <li class="nav-item"><a  href="#overview">Overview</a></li>
-            <li class="nav-item"><a href="#highlights">Highlights</a></li>
-            <!-- <li class="nav-item"><a href="#price-list">Price list</a></li> -->
-            <li class="nav-item"><a href="#floor-plan">Price list</a></li>
-            <li class="nav-item"><a href="#amenities">Amenities</a></li>
-            <li class="nav-item"><a href="#floor-plan">Floor Plan</a></li>
-            <li class="nav-item"><a href="#contact-us">Location Map</a></li>
-            <li class="nav-item"><a href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a href="#">Home</a></li>            
+            <li class="nav-item"><a href="#our-projects">Our Projects</a></li>            
+            <li class="nav-item"><a href="#contact-us">About Us</a></li>
             <li class="nav-item"><a href="#contact-us">Contact Us</a></li>
         </ul>    
     </aside>
@@ -149,44 +143,49 @@
 
 
 
-    <main class="our-projects-section" id="our-projects">
+    <!-- All Projects -->
+    <main class="our-projects-section all-projects" id="our-projects">
         <div class="wrapper">
+            <h3 class="main-heading"><a href="#our-projects" class="NovaSquareFont" style="color: var(--black);text-decoration: underline;">Our Projects</a> </h3>
             <div class="divflex row p-0 justify-content-center">
                 <div class="flexbox">
                     <!-- image must be in "background-image" property-->
-                    <div class="imgdiv" style="background-image: url(images/projects/project-name1.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+                    <div class="imgdiv" style="background-image: url(images/projects/project-name1.jpg);"></div>
+                    <div class="proj-name">Sugam Niavara</div>
                     <div class="content-div">
                         <span class="p-address">Noida Sector 15</span>
-                        <div class="proj-name">Sugam Niavara</div>
+                        <div class="p-price NovaSquareFont">Starting Price : 87 Lacs*</div>
                         <div class="p-typology">3 & 4 Bhk Apartments</div>
                         <div class="buttons-div d-flex justify-content-between">
-                            <a href="#" class="custombtn btnoutline">Interested</a>
+                            <a href="#" class="custombtn btnoutline" data-target="#customModal" data-toggle="modal">Interested</a>
                             <a href="micro/" class="custombtn btnoutline">View More</a>
                         </div>
                     </div>
                 </div>
                 <div class="flexbox">
                     <!-- image must be in "background-image" property-->
-                    <div class="imgdiv" style="background-image: url(images/projects/project-name2.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+                    <div class="imgdiv" style="background-image: url(images/projects/project-name2.jpg);"></div>
+                    <div class="proj-name">Sugam Niavara</div>
                     <div class="content-div">
                         <span class="p-address">Noida Sector 15</span>
-                        <div class="proj-name">Sugam Niavara</div>
+                        <div class="p-price NovaSquareFont">Starting Price : 87 Lacs*</div>
                         <div class="p-typology">3 & 4 Bhk Apartments</div>
                         <div class="buttons-div d-flex justify-content-between">
-                            <a href="#" class="custombtn btnoutline">Interested</a>
+                            <a href="#" class="custombtn btnoutline" data-target="#customModal" data-toggle="modal">Interested</a>
                             <a href="micro/" class="custombtn btnoutline">View More</a>
                         </div>
                     </div>
                 </div>
                 <div class="flexbox">
                     <!-- image must be in "background-image" property-->
-                    <div class="imgdiv" style="background-image: url(images/projects/project-name1.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+                    <div class="imgdiv" style="background-image: url(images/projects/project-name1.jpg);"></div>
+                    <div class="proj-name">Sugam Niavara</div>
                     <div class="content-div">
                         <span class="p-address">Noida Sector 15</span>
-                        <div class="proj-name">Sugam Niavara</div>
+                        <div class="p-price NovaSquareFont">Starting Price : 87 Lacs*</div>
                         <div class="p-typology">3 & 4 Bhk Apartments</div>
                         <div class="buttons-div d-flex justify-content-between">
-                            <a href="#" class="custombtn btnoutline">Interested</a>
+                            <a href="#" class="custombtn btnoutline" data-target="#customModal" data-toggle="modal">Interested</a>
                             <a href="micro/" class="custombtn btnoutline">View More</a>
                         </div>
                     </div>
@@ -194,12 +193,13 @@
             </div>
         </div>
     </main>
+    
 
 
     <!---------------- Contact Section Codes Start From Here --------------->
     <section class="container-fluid contact-container animation-section contact-section" id="contact-us">
         <div class="contact-wrapper">            
-            <div class="d-flex flexrow f-wrap ">
+            <div class="d-flex flexrow f-wrap align-items-center">
                 <div class="col-md-7 right-col">
                     <div class="head-div">
                         <div class="title NovaSquareFont">ABOUT US</div>
@@ -268,54 +268,57 @@
     </div>
     <!-- mobile-section-footer -->
 
-
-    <!-- modal -->
+    <!-- modal with left side content -->
     <div class="modal fade modal1 theModal" id="customModal" tabindex="-1" aria-labelledby="customModalLabel" aria-modal="true" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-head-div">
-                <div class="flexdiv d-flex justify-content-between">
-                    <h3 class="modal-head NovaSquareFont ">Demo Project</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
-                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"></path>
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 800px;">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"></path>
                     </svg></button>
+                <!-- <div class="modal-head-div">
+                    <div class="flexdiv d-flex justify-content-between">
+                        <h3 class="modal-head NovaSquareFont ">Demo Project</h3>
+                    </div>
+                    <p class="modal-para" style="text-transform: capitalize;">Project Location Here... </p>
+                </div> -->
+                <div  class="fractiondiv row">
+                    <div class="col-left col-md-6 p-0 d-flex justify-content-center align-items-center">
+                        <div class="inner-col">
+                            <h3 class="modal-head NovaSquareFont ">Demo Project</h3>
+                            <div class="m-typology">3 & 4 Bhk Apartments</div>
+                            <div class="m-price">Price : 87 Lacs* Onwards</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 from-col">
+                        <p class="m-msg">Send Us A Message !</p>
+                        <div class="col-12 coldiv p-0">
+                            <div class="form-floating" style="position: relative;">
+                                <input class="form-control" type="text" id="qSenderNamemodal" placeholder="Your Name">                            
+                            </div>
+                        </div>
+                        <div class="col-12 coldiv p-0">
+                            <div class="form-floating" style="position: relative;">
+                                <input class="form-control" type="text" id="qMobileNomodal" placeholder="Your Mobile Number">                            
+                            </div>
+                        </div>
+                        <div class="col-12 coldiv p-0">
+                            <div class="form-floating" style="position: relative;">
+                                <input class="form-control" type="email" id="qEmailIDmodal" placeholder="Your Email Address">
+                            </div>
+                        </div>
+                        <div class="col-12 coldiv p-0">
+                            <div class="form-floating" style="position: relative;">
+                                <input class="form-control" placeholder="Message" id="qMessagemodal">
+                            </div>
+                        </div>
+                        <p style="font-weight: 400;color: #000;opacity: 1;font-size:10px;letter-spacing: 0.5px;margin:0;line-height:15px; margin-bottom: 15px;"><input type="checkbox" onclick="return false" checked> I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.</p>
+                        <div class="col-md-12">
+                            <button class="custombtn btnoutline w-100" id="SubmitQuerymodal">submit now</button>
+                        </div>
+                    </div>
                 </div>
-                <p class="modal-para" style="text-transform: capitalize;">Project Location Here... </p>
+                
             </div>
-            <div class="banner-form-section" autocomplete="off">
-                <div class="row">
-                    <div class="col-12 coldiv">
-                        <div class="form-floating" style="position: relative;">
-                            <input class="form-control" type="text" id="qSenderNamemodal" name="name_contact" placeholder="Your Name">                            
-                        </div>
-                    </div>
-                    <div class="col-12 coldiv">
-                        <div class="form-floating" style="position: relative;">
-                            <input class="form-control" type="text" id="qMobileNomodal" name="phone_contact" placeholder="Your Mobile Number">                            
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 coldiv">
-                        <div class="form-floating" style="position: relative;">
-                            <input class="form-control" type="email" id="qEmailIDmodal" name="email_contact" placeholder="Your Email Address">
-                        </div>
-                    </div>
-                    <div class="col-12 coldiv">
-                        <div class="form-floating" style="position: relative;">
-                            <input class="form-control" placeholder="Message" id="qMessagemodal" name="message_contact">
-                        </div>
-                    </div>
-                </div>
-                <p style="font-weight: 400;color: #000;opacity: 1;font-size:10px;letter-spacing: 0.5px;margin:0;line-height:15px; margin-bottom: 15px;"><input type="checkbox" onclick="return false" checked> I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.</p>
-                <div class="row">
-                    <div class="col-md-12 pb-2">
-                        <button class="custombtn btnoutline w-100" id="SubmitQuerymodal">submit now</button>
-                    </div>
-                </div>
-            </div>
-            
-          </div>
         </div>
     </div>
 
@@ -336,7 +339,7 @@
     <script>
         var AgentInfo = {
             "vAgentID": "xxxx",
-            "vProject": "Project Name",
+            "vProject": "Project Name P",
             "vURL": "/",
             "thankspageurl": "/thanks.htm",
         };
@@ -438,14 +441,11 @@
                 }
             });
 
-            function checkAndRemoveElement() {
+            $(window).resize(function() {
                 if ($(window).width() <= 767) {
                     $('.d-view').remove();
                 }
-            }
-
-            // Run once when the document is ready
-            checkAndRemoveElement();
+            });
 
 
             $(".reamoredbtn").click(function(){
@@ -481,7 +481,7 @@
 
             setTimeout(() => {
                 $("#customModal").modal('show')
-            }, 5000);
+            }, 8000);
         })
     </script>
     <!--end custom Scripts -->    
